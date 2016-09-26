@@ -1,0 +1,32 @@
+{
+  "name": "stately",
+  "version": "1.0.0",
+  "description": "A Jekyll theme for government.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmarsceill/stately.git"
+  },
+  "keywords": [
+    "Jekyll",
+    "Government",
+    "GitHub",
+    "GitHub",
+    "Pages"
+  ],
+  "author": "Patrick Marsceill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pmarsceill/stately/issues"
+  },
+  "homepage": "https://github.com/pmarsceill/stately#readme",
+  "devDependencies": {
+    "primer-base": "^0.3.0",
+    "primer-layout": "^0.2.4",
+    "primer-support": "^0.6.0",
+    "primer-utilities": "^1.0.0"
+  }
+}
