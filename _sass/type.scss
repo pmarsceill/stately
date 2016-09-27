@@ -1,33 +1,53 @@
 html {
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: $body-font-family;
+  line-height: $body-line-height;
 }
 
 body {
-  font-family: 'Lora', serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.4;
+  font-family: $body-font-family;
+  font-weight: 400;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $body-font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  color: $heading-font-color;
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 48px;
 }
 
 h2 {
-
+  font-weight: 300;
+  font-size: 36px;
 }
 
 h3 {
-
+  font-size: 24px;
+  font-weight: 300;
 }
 
 h4 {
-
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 300;
 }
 
 h5 {
-
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  font-weight: 600;
+  color: $heading-font-color;
 }
 
 h6 {
@@ -44,6 +64,20 @@ p {
 
 }
 
+.text-intro {
+  font-family: $heading-font-family;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: $body-line-height;
+}
+
 small {
 
+}
+
+.display-alpha {
+  font-family: $display-font-family;
+  text-transform: uppercase;
+  font-size: 54px;
+  line-height: $heading-line-height;
 }
