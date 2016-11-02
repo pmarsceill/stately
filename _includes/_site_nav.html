@@ -1,0 +1,20 @@
+<nav class="site-nav">
+  <div class="container-lg px-4">
+    <span class="heading-beta">{{ site.title }}</span>
+    <ol class="py-4">
+      {% assign pages_list = site.pages | sort:"url" %}
+        {% for node in pages_list %}
+          {% if node.title != null %}
+            {% if node.layout == "page" %}
+              <li>
+                <a class="{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">
+                  {{ node.title }}
+                </a>
+              </li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        <li><a href="https://github.com/pmarsceill/stately">GitHub</a></li>
+    </ol>
+  </div>
+</nav>
