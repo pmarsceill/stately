@@ -11,47 +11,51 @@ body {
   color: $body-font-color;
 }
 
-h1,
-h2,
-h3,
-h4,
+h1, .heading-alpha,
+h2, .heading-beta,
+h3, .heading-gamma,
+h4, .heading-delta,
+h5, .heading-epsilon
 h6 {
   font-family: $heading-font-family;
   line-height: $heading-line-height;
   color: $heading-font-color;
 }
 
-h1 {
+h1, .heading-alpha {
   font-weight: 300;
   font-size: 48px;
 }
 
-h2 {
+h2, .heading-beta {
   font-weight: 300;
   font-size: 36px;
 }
 
-h3 {
+h3, .heading-gamma {
   font-size: 24px;
   font-weight: 300;
 }
 
-h4 {
+h4, .heading-delta {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 300;
 }
 
-h5 {
+h5, .heading-epsilon {
   font-family: $body-font-family;
   font-size: $body-font-size;
   font-weight: 600;
   color: $heading-font-color;
 }
 
-h6 {
-
+.display-alpha {
+  font-family: $display-font-family;
+  text-transform: uppercase;
+  font-size: 54px;
+  line-height: $heading-line-height;
 }
 
 ul,
@@ -73,11 +77,4 @@ p {
 
 small {
 
-}
-
-.display-alpha {
-  font-family: $display-font-family;
-  text-transform: uppercase;
-  font-size: 54px;
-  line-height: $heading-line-height;
 }
