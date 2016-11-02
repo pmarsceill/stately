@@ -1,7 +1,8 @@
 ---
 ---
 
-@import "primer-deps.scss";
+// Import vendor dependancies (pulled in via npm)
+@import "vendor.scss";
 
 @import "variables.scss";
 @import "type.scss";
