@@ -1,4 +1,26 @@
 // path to vendor css
-@import "../node_modules/primer-base/index.scss";
-@import "../node_modules/primer-layout/index.scss";
-@import "../node_modules/primer-utilities/index.scss";
+
+// Normalize
+@import "../node_modules/normalize.css/normalize.scss";
+
+// Primer support
+@import "../node_modules/primer-support/index.scss";
+
+// Primer base
+@import "../node_modules/primer-base/lib/base.scss";
+@import "../node_modules/primer-base/lib/typography-base.scss";
+
+// Primer layout
+@import "../node_modules/primer-layout/lib/columns.scss";
+@import "../node_modules/primer-layout/lib/container.scss";
+@import "../node_modules/primer-layout/lib/grid-offset.scss";
+@import "../node_modules/primer-layout/lib/grid.scss";
+
+// Primer utilities
+@import "../node_modules/primer-utilities/lib/animations.scss";
+@import "../node_modules/primer-utilities/lib/borders.scss";
+@import "../node_modules/primer-utilities/lib/colors.scss";
+@import "../node_modules/primer-utilities/lib/layout.scss";
+@import "../node_modules/primer-utilities/lib/margin.scss";
+@import "../node_modules/primer-utilities/lib/padding.scss";
+@import "../node_modules/primer-utilities/lib/typography.scss";
