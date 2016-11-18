@@ -28,3 +28,6 @@ social_username: jekyllrb
 
 # Build settings
 markdown: kramdown
+
+# Stately settings
+logo_file: assets/images/stately-logo.png # path to the logo file (supports svg, png, jpg, gif)
