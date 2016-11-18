@@ -14,8 +14,7 @@
     "Jekyll",
     "Government",
     "GitHub",
-    "GitHub",
-    "Pages"
+    "GitHub Pages"
   ],
   "author": "Patrick Marsceill",
   "license": "MIT",
@@ -24,9 +23,9 @@
   },
   "homepage": "https://github.com/pmarsceill/stately#readme",
   "devDependencies": {
-    "primer-base": "^0.3.0",
-    "primer-layout": "^0.2.4",
-    "primer-support": "^0.6.0",
-    "primer-utilities": "^1.0.0"
+    "primer-base": "^0.4.0",
+    "primer-layout": "^0.3.0",
+    "primer-support": "^1.0.0",
+    "primer-utilities": "^2.0.0"
   }
 }
