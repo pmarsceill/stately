@@ -1,3 +1,4 @@
+// Base styles
 html {
   font-size: $body-font-family;
   line-height: $body-line-height;
@@ -11,8 +12,9 @@ body {
   color: $body-font-color;
 }
 
-h1, .heading-alpha,
-h2, .heading-beta,
+// Headings
+h1, .heading-alpha, .display-alpha,
+h2, .heading-beta, .display-beta,
 h3, .heading-gamma,
 h4, .heading-delta,
 h5, .heading-epsilon
@@ -20,6 +22,7 @@ h6 {
   font-family: $heading-font-family;
   line-height: $heading-line-height;
   color: $heading-font-color;
+  margin-bottom: .2em;
 }
 
 h1, .heading-alpha {
@@ -55,17 +58,45 @@ h5, .heading-epsilon {
   font-family: $display-font-family;
   text-transform: uppercase;
   font-size: 54px;
+  font-weight: 300;
   line-height: $heading-line-height;
 }
 
+.display-beta {
+  font-family: $display-font-family;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: $heading-line-height;
+}
+
+// Lists
 ul,
 ol,
 dl {
-
+  li {
+    margin-bottom: .5em;
+  }
 }
 
-p {
+.ol-styled {
+  position: relative;
+  list-style: none;
+  counter-reset: ol-counter;
 
+  li {
+
+    &:before {
+      content: counter(ol-counter);
+      counter-increment: ol-counter;
+      opacity: 0.6;
+      padding-right: 0.5em;
+
+      @include breakpoint(md) {
+        position: absolute;
+        left: -1.25em;
+      }
+    }
+  }
 }
 
 .text-intro {
