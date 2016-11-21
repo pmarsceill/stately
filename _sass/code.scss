@@ -21,7 +21,6 @@ code {
 
 pre {
   padding: $spacer;
-  background-color: rgba(0, 0, 0, 0.03);
   border-radius: $border-radius;
 
   code {
@@ -42,6 +41,8 @@ pre {
 // syntax highlight
 .highlight {
   margin-bottom: $spacer;
+  background-color: rgba(0, 0, 0, 0.03);
+  overflow: scroll;
 
   .code-example & {
     margin-bottom: 0;
