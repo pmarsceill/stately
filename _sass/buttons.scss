@@ -36,7 +36,7 @@
 
   &:hover,
   &.zeroclipboard-is-hover {
-    background-image: linear-gradient(#f1f1f1, #e6e6e6);
+    background-image: linear-gradient(#f1f1f1, #ddd);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -95,8 +95,9 @@
 }
 
 .link-download {
+  position: relative;
   padding-left: $spacer-6;
-  background-image: url("/assets/images/icon-download.png");
+  background-image: url("../images/icon-download.png");
   background-repeat: no-repeat;
   background-size: $spacer-5 auto;
   background-position: left center;
@@ -105,9 +106,15 @@
 
   &:hover {
     text-decoration: none;
+    &::after {
+      position: absolute;
+      content: "\2193";
+      left: $spacer-5;
+      top: 0.8em;
+    }
   }
 }
 
 .link-download-form {
-  background-image: url("/assets/images/icon-download-form.png");
+  background-image: url("../images/icon-download-form.png");
 }
