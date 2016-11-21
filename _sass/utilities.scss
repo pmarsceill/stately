@@ -2,10 +2,28 @@
   opacity: 0.8 !important;
 }
 
+.img-fluid {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .text-body-color {
   color: $body-font-color !important;
 }
 
 .text-heading-color {
   color: $heading-font-color !important;
+}
+
+.text-serif {
+  font-family: $heading-font-family !important;
+}
+
+.bg-darkest {
+  background-color: $darkest-bg;
+}
+
+.text-underline {
+  text-decoration: underline;
 }

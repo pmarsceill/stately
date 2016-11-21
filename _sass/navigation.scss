@@ -1,10 +1,33 @@
 .site-nav {
-
+  position: relative;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .site-logo {
   max-height: 28px;
   width: auto;
+}
+
+.side-nav {
+  padding-top: $spacer-3;
+}
+
+.side-nav-item {
+  border-bottom: $border;
+
+  &:first-of-type {
+    border-top: $border;
+  }
+
+  &.active {
+    border-right: 2px solid $royal-blue;
+  }
+}
+
+.side-nav-link {
+  &.active {
+    color: $heading-ink;
+  }
 }
 
 .footer-nav {
