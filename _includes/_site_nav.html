@@ -11,7 +11,7 @@
             {% if node.title != null %}
               {% if node.nav == true %}
                 <li class="d-inline-block{% unless forloop.last %} mr-3{% endunless %}">
-                  <a class="d-block text-heading-color site-nav-item{% if page.url == node.url | absolute_url %} active{% endif %}" href="{{ node.url }}">
+                  <a class="d-block text-heading-color site-nav-item{% if page.url == node.url | relative_url %} active{% endif %}" href="{{ node.url }}">
                     {{ node.title }}
                   </a>
                 </li>
