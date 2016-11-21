@@ -2,9 +2,11 @@
 <html>
   {% include _head.html %}
 
-  <body>
+  <body class="bg-darkest">
     {% include _site_nav.html %}
 
-    {{ content }}
+    <div class="bg-white">{{ content }}</div>
+
+    {% include _footer.html %}
   </body>
 </html>
