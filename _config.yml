@@ -28,3 +28,4 @@ permalink: pretty
 # Stately settings
 logo_file: assets/images/stately-logo.png # path to the logo file (supports svg, png, jpg, gif). Delete this line for no logo.
 github_link: true # Display link to edit page content on GitHub
+github_pages_branch: master # Branch where gh-pages site is hosted (either master, master/docs, or gh-pages)
