@@ -3,6 +3,9 @@
   {% include _head.html %}
 
   <body class="bg-darkest">
+    {% unless site.info_bar == nil %}
+      {% include _info_bar.html %}
+    {% endunless %}
     {% include _site_nav.html %}
 
     <div class="bg-white">{{ content }}</div>
