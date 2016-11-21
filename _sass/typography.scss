@@ -7,9 +7,13 @@ html {
 body {
   font-family: $body-font-family;
   font-weight: 400;
-  font-size: $body-font-size;
+  font-size: 14px;
   line-height: $body-line-height;
   color: $body-font-color;
+
+  @include breakpoint(md) {
+    font-size: $body-font-size;
+  }
 }
 
 // Headings
@@ -26,18 +30,27 @@ h6 {
 }
 
 h1, .heading-alpha {
+  font-family: $display-font-family;
   font-weight: 300;
   font-size: 48px;
 }
 
 h2, .heading-beta {
   font-weight: 300;
-  font-size: 36px;
+  font-size: 28px;
+
+  @include breakpoint(md) {
+    font-size: 36px;
+  }
 }
 
 h3, .heading-gamma {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
+
+  @include breakpoint(md) {
+    font-size: 24px;
+  }
 }
 
 h4, .heading-delta {
@@ -57,9 +70,14 @@ h5, .heading-epsilon {
 .display-alpha {
   font-family: $display-font-family;
   text-transform: uppercase;
-  font-size: 54px;
+  letter-spacing: .03em;
+  font-size: 34px;
   font-weight: 300;
   line-height: $heading-line-height;
+
+  @include breakpoint(md) {
+    font-size: 54px;
+  }
 }
 
 .display-beta {
@@ -102,10 +120,27 @@ dl {
 .text-intro {
   font-family: $heading-font-family;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 18px;
   line-height: $body-line-height;
+
+  @include breakpoint(md) {
+    font-size: 21px;
+  }
 }
 
-small {
+.list-checklist {
+  list-style: none;
 
+  li {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -1.25em;
+      width: 0.75em;
+      height: 0.75em;
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.29 15"><path d="M19.29,2.37L6.43,15,0,8.68,2.41,6.32l4,3.95L16.88,0Z" fill="#{ $gray }"/></svg>');
+    }
+  }
 }
