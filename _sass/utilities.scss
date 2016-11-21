@@ -3,9 +3,9 @@
 }
 
 .img-fluid {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
 }
 
 .text-body-color {
@@ -21,9 +21,9 @@
 }
 
 .bg-darkest {
-  background-color: $darkest-bg;
+  background-color: $darkest-bg !important;
 }
 
 .text-underline {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
