@@ -8,6 +8,10 @@
   height: auto !important;
 }
 
+.bg-darkest {
+  background-color: $darkest-bg !important;
+}
+
 .text-body-color {
   color: $body-font-color !important;
 }
@@ -20,10 +24,14 @@
   font-family: $heading-font-family !important;
 }
 
-.bg-darkest {
-  background-color: $darkest-bg !important;
-}
-
 .text-underline {
   text-decoration: underline !important;
+}
+
+.text-small {
+  font-size: 12px !important;
+
+  @include breakpoint(md) {
+    font-size: 14px !important;
+  }
 }

@@ -85,6 +85,10 @@ h5, .heading-epsilon {
   font-size: 28px;
   font-weight: 300;
   line-height: $heading-line-height;
+
+  @include breakpoint(md) {
+    font-size: 36px;
+  }
 }
 
 // Lists

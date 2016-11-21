@@ -15,3 +15,5 @@ $heading-line-height: 1.2;
 
 $body-font-color: $body-ink;
 $heading-font-color: $heading-ink;
+
+$link-color: saturate(lighten($royal-blue, 15%), 5%);

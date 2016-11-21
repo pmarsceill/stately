@@ -24,9 +24,9 @@
 
   &:focus {
     text-decoration: none;
-    border-color: #51a7e8; // Blue glow for focus
+    border-color: $royal-blue; // Blue glow for focus
     outline: none;
-    box-shadow: 0 0 5px rgba(81, 167, 232, 0.5); // Blue glow for focus
+    box-shadow: 0 0 5px rgba($royal-blue, 0.25), inset 1px 1px 0 rgba($royal-blue, 0.4), inset -1px -1px 0 rgba($royal-blue, 0.4); // Blue glow for focus
   }
 
   &:focus:hover,
@@ -69,6 +69,15 @@
       background-image: none;
       box-shadow: none;
     }
+  }
+}
+
+.btn-no-shadow {
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.1);
+
+  &:hover,
+  &.zeroclipboard-is-hover {
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
