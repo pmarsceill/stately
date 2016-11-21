@@ -1,0 +1,128 @@
+// Code snippets
+//
+
+code,
+pre {
+  font-family: $monospace-font-family;
+}
+
+// Inline code
+
+code {
+  padding: 0.25em 0.4em;
+  font-size: 90%;
+  color: $heading-ink;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+// Code blocks
+
+pre {
+  padding: $spacer;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: $border-radius;
+
+  code {
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    font-size: inherit;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+}
+
+// syntax highlight
+.highlight {
+  margin-bottom: $spacer;
+
+  .code-example & {
+    margin-bottom: 0;
+  }
+
+  .c { color: #586e75; } /* comment */
+  .err { color: #93a1a1; } /* error */
+  .g { color: #93a1a1; } /* generic */
+  .k { color: #859900; } /* keyword */
+  .l { color: #93a1a1; } /* literal */
+  .n { color: #93a1a1; } /* name */
+  .o { color: #859900; } /* operator */
+  .x { color: #cb4b16; } /* other */
+  .p { color: #93a1a1; } /* punctuation */
+  .cm { color: #586e75; } /* comment.multiline */
+  .cp { color: #859900; } /* comment.preproc */
+  .c1 { color: #586e75; } /* comment.single */
+  .cs { color: #859900; } /* comment.special */
+  .gd { color: #2aa198; } /* generic.deleted */
+
+  .ge {
+    font-style: italic;
+    color: #93a1a1;
+  } /* generic.emph */
+
+  .gr { color: #dc322f; } /* generic.error */
+  .gh { color: #cb4b16; } /* generic.heading */
+  .gi { color: #859900; } /* generic.inserted */
+  .go { color: #93a1a1; } /* generic.output */
+  .gp { color: #93a1a1; } /* generic.prompt */
+
+  .gs {
+    font-weight: bold;
+    color: #93a1a1;
+  } /* generic.strong */
+
+  .gu { color: #cb4b16; } /* generic.subheading */
+  .gt { color: #93a1a1; } /* generic.traceback */
+  .kc { color: #cb4b16; } /* keyword.constant */
+  .kd { color: #268bd2; } /* keyword.declaration */
+  .kn { color: #859900; } /* keyword.namespace */
+  .kp { color: #859900; } /* keyword.pseudo */
+  .kr { color: #268bd2; } /* keyword.reserved */
+  .kt { color: #dc322f; } /* keyword.type */
+  .ld { color: #93a1a1; } /* literal.date */
+  .m { color: #2aa198; } /* literal.number */
+  .s { color: #2aa198; } /* literal.string */
+  .na { color: #93a1a1; } /* name.attribute */
+  .nb { color: #b58900; } /* name.builtin */
+  .nc { color: #268bd2; } /* name.class */
+  .no { color: #cb4b16; } /* name.constant */
+  .nd { color: #268bd2; } /* name.decorator */
+  .ni { color: #cb4b16; } /* name.entity */
+  .ne { color: #cb4b16; } /* name.exception */
+  .nf { color: #268bd2; } /* name.function */
+  .nl { color: #93a1a1; } /* name.label */
+  .nn { color: #93a1a1; } /* name.namespace */
+  .nx { color: #93a1a1; } /* name.other */
+  .py { color: #93a1a1; } /* name.property */
+  .nt { color: #268bd2; } /* name.tag */
+  .nv { color: #268bd2; } /* name.variable */
+  .ow { color: #859900; } /* operator.word */
+  .w { color: #93a1a1; } /* text.whitespace */
+  .mf { color: #2aa198; } /* literal.number.float */
+  .mh { color: #2aa198; } /* literal.number.hex */
+  .mi { color: #2aa198; } /* literal.number.integer */
+  .mo { color: #2aa198; } /* literal.number.oct */
+  .sb { color: #586e75; } /* literal.string.backtick */
+  .sc { color: #2aa198; } /* literal.string.char */
+  .sd { color: #93a1a1; } /* literal.string.doc */
+  .s2 { color: #2aa198; } /* literal.string.double */
+  .se { color: #cb4b16; } /* literal.string.escape */
+  .sh { color: #93a1a1; } /* literal.string.heredoc */
+  .si { color: #2aa198; } /* literal.string.interpol */
+  .sx { color: #2aa198; } /* literal.string.other */
+  .sr { color: #dc322f; } /* literal.string.regex */
+  .s1 { color: #2aa198; } /* literal.string.single */
+  .ss { color: #2aa198; } /* literal.string.symbol */
+  .bp { color: #268bd2; } /* name.builtin.pseudo */
+  .vc { color: #268bd2; } /* name.variable.class */
+  .vg { color: #268bd2; } /* name.variable.global */
+  .vi { color: #268bd2; } /* name.variable.instance */
+  .il { color: #2aa198; } /* literal.number.integer.long */
+}
