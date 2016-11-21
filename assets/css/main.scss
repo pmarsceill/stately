@@ -6,8 +6,12 @@
 
 @import "variables.scss";
 @import "utilities.scss";
+@import "base.scss";
 
-@import "type.scss";
+@import "typography.scss";
+@import "buttons.scss";
 @import "navigation.scss";
 @import "jumbotron.scss";
 @import "page-section.scss";
+@import "markdown-body.scss";
+@import "code.scss";
