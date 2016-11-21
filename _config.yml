@@ -17,17 +17,13 @@ title: Stately
 description: The Jekyll theme for government
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_repo: jekyll # the GitHub repo name for your project
-github_username: jekyll
-
-# Optional social link, you can choose from the following options:
-# twitter (default), instagram, medium, or dribbble
-social_link: twitter
-social_username: jekyllrb
 
 
 # Build settings
 markdown: kramdown
+gems:
+  - jemoji
 
 # Stately settings
-logo_file: assets/images/stately-logo.png # path to the logo file (supports svg, png, jpg, gif)
+logo_file: assets/images/stately-logo.png # path to the logo file (supports svg, png, jpg, gif). Delete this line for no logo.
+github_link: true # Display link to edit page content on GitHub
