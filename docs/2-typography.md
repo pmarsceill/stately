@@ -36,8 +36,19 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius officiis reprehen
 
 ### Display headings
 
+<div class="code-example border rounded-1">
+
+{% highlight html %}
 <h1 class="display-alpha">Display heading alpha</h1>
 <h2 class="display-beta">Display heading beta</h2>
+
+{% endhighlight %}
+
+  <div class="border-top p-3">
+    <h1 class="display-alpha">Display heading alpha</h1>
+    <h2 class="display-beta">Display heading beta</h2>
+  </div>
+</div>
 
 ## Body text styles
 
