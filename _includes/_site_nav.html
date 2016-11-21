@@ -1,8 +1,8 @@
-<nav class="site-nav py-4">
+<nav class="site-nav py-4 bg-white">
   <div class="container-lg px-4">
-    <div class="d-flex flex-justify-between flex-items-center">
+    <div class="d-flex flex-justify-between flex-items-baseline">
       <div>
-        {% unless site.logo_file == nil %}<img src="{{ site.logo_file | relative_url }}" alt="{{ site.title }}" alt="{{ site.title }}" class="site-logo mr-2">{% endunless %}
+        {% unless site.logo_file == nil %}<img src="{{ site.logo_file | absolute_url }}" alt="{{ site.title }}" alt="{{ site.title }}" class="site-logo mr-2">{% endunless %}
         <a class="heading-beta no-underline" href="/">{{ site.title }}</a>
       </div>
       <ol class="list-style-none">
@@ -11,7 +11,7 @@
             {% if node.title != null %}
               {% if node.nav == true %}
                 <li class="d-inline-block{% unless forloop.last %} mr-3{% endunless %}">
-                  <a class="d-block text-heading-color{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">
+                  <a class="d-block text-heading-color site-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">
                     {{ node.title }}
                   </a>
                 </li>
