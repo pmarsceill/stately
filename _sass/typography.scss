@@ -120,11 +120,11 @@ dl {
 .text-intro {
   font-family: $heading-font-family;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   line-height: $body-line-height;
 
   @include breakpoint(md) {
-    font-size: 21px;
+    font-size: 18px;
   }
 }
 
