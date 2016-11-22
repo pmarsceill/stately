@@ -54,17 +54,17 @@ h3, .heading-gamma {
 }
 
 h4, .heading-delta {
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-weight: 300;
-}
-
-h5, .heading-epsilon {
   font-family: $body-font-family;
   font-size: $body-font-size;
   font-weight: 600;
   color: $heading-font-color;
+}
+
+h5, .heading-epsilon {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 300;
 }
 
 .display-alpha {
