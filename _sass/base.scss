@@ -21,3 +21,8 @@ a:not([class]) {
     background-image: linear-gradient(rgba($royal-blue, 0.25) 0%, rgba($royal-blue, 0.25) 100%);
   }
 }
+
+hr {
+  margin: $spacer-5 0;
+  border-bottom: 1px solid $border-color;
+}
