@@ -8,7 +8,7 @@ nav: true
   {% for post in site.posts %}
     <article class="mb-4 mb-md-6">
       <h2 class="heading-gamma">
-        <a href="{{ post.url }}">
+        <a href="{{ post.url | absolute_path }}">
           {{ post.title }}
         </a>
       </h2>
