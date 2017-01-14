@@ -24,6 +24,11 @@ markdown: kramdown
 gems:
   - jemoji
 permalink: pretty
+sass:
+  sass_dir: assets/css/
+  # Load dependancies
+  load_paths:
+    - node_modules/
 
 # Stately settings
 logo_file: assets/images/stately-logo.png # path to the logo file (supports svg, png, jpg, gif). Delete this line for no logo.

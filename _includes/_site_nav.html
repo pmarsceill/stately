@@ -2,8 +2,7 @@
   <div class="container-lg px-4">
     <div class="d-flex flex-justify-between flex-items-baseline">
       <div>
-        {% unless site.logo_file == nil %}<img src="{{ site.logo_file | absolute_url }}" alt="{{ site.title }}" alt="{{ site.title }}" class="site-logo mr-2">{% endunless %}
-        <a class="heading-beta no-underline" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+        <a class="heading-beta no-underline" href="{{ "/" | relative_url }}">{% unless site.logo_file == nil %}<img src="{{ site.logo_file | absolute_url }}" alt="{{ site.title }}" alt="" class="site-logo mr-2">{% endunless %}{{ site.title }}</a>
       </div>
       <ol class="list-style-none">
         {% assign pages_list = site.pages | sort:"url" %}
