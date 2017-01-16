@@ -33,3 +33,31 @@
   }
   // stylelint-enable selector-pseudo-element-no-unknown
 }
+
+.select-wrap {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 1.25rem;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-top: -0.15rem;
+    pointer-events: none;
+    content: "";
+    border-top: 0.35rem solid;
+    border-right: 0.35rem solid transparent;
+    border-bottom: 0.35rem solid transparent;
+    border-left: 0.35rem solid transparent;
+  }
+
+  select {
+    outline: 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+}
