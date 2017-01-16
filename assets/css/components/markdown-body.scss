@@ -5,6 +5,7 @@
   h4,
   h5,
   h6 {
+    margin-bottom: .3em;
     &:not(:first-child){
       margin-top: 1em;
     }
