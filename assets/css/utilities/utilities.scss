@@ -1,12 +1,12 @@
-.dim {
-  opacity: 0.8 !important;
-}
+// Layout utils
 
 .img-fluid {
   width: 100% !important;
   max-width: 100% !important;
   height: auto !important;
 }
+
+// Color / opacity utils
 
 .bg-darkest {
   background-color: $darkest-bg !important;
@@ -19,6 +19,12 @@
 .text-heading-color {
   color: $heading-font-color !important;
 }
+
+.dim {
+  opacity: 0.8 !important;
+}
+
+// Type utils
 
 .text-serif {
   font-family: $heading-font-family !important;
@@ -33,5 +39,21 @@
 
   @include breakpoint(md) {
     font-size: 14px !important;
+  }
+}
+
+.text-regular {
+  font-size: 14px;
+
+  @include breakpoint(md) {
+    font-size: $body-font-size;
+  }
+}
+
+.text-large {
+  font-size: 16px;
+
+  @include breakpoint(md) {
+    font-size: 20px;
   }
 }
