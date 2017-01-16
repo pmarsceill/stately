@@ -1,0 +1,8 @@
+machine:
+  node:
+    version: 5.1.0
+
+test:
+  post:
+    - bundle exec jekyll build
+    - bundle exec htmlproofer ./_site --check-opengraph true --check-html true --http-status-ignore "408,301,0"  --empty-alt-ignore true --external_only true
