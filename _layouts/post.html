@@ -5,19 +5,20 @@ layout: page
 <h1 class="mb-4">{{ page.title }}</h1>
 
 <div class="clearfix gut-lg">
-  <div class="col-9 float-left markdown-body">
-    {{ content }}
-  </div>
-
-  <div class="col-3 float-left">
-    <p>
+  <div class="col-md-3 float-md-right">
+    <p class="col-6 col-md-12 float-left float-md-none">
       <span class="text-small text-gray-light d-block">Published:</span>
       <time class="text-small d-block mb-3">{{ page.date | date: "%B %-d, %Y" }}</time>
     </p>
-    <p>
+    <p class="col-6 col-md-12 float-left float-md-none">
       <span class="text-small text-gray-light d-block">Reading time:</span>
       <span class="text-small d-block mb-3">{% include _reading_time.html %}</span>
     </p>
+  </div>
+  <div class="col-md-9 float-md-left markdown-body">
+    {{ content }}
+  </div>
+  <div class="col-md-3 float-md-right">
     {% if page.next or page.previous %}
     <hr class="my-3">
     {% endif %}
