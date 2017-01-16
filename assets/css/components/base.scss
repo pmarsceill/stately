@@ -62,14 +62,16 @@ table {
   }
 }
 
-ul,ol {
+ul,
+ol {
   padding-left: 1.2rem;
 
   @include breakpoint(lg) {
     padding-left: 0;
   }
 
-  ul,ol {
+  ul,
+  ol {
     margin-top: $spacer-1;
     margin-left: 1.1em;
   }
