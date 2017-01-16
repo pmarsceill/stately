@@ -103,24 +103,16 @@
 
 .link-download {
   position: relative;
-  padding-top: $spacer-3;
-  padding-bottom: $spacer-3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 40px;
   padding-left: $spacer-6;
+  line-height: 1.3;
   background-image: url("../images/icon-download.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: $spacer-5 auto;
-
-  &:hover {
-    text-decoration: none;
-
-    &::after {
-      position: absolute;
-      top: 0.8em;
-      left: $spacer-5;
-      content: "\2193";
-    }
-  }
 }
 
 .link-download-form {
