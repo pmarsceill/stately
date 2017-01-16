@@ -26,3 +26,33 @@ hr {
   margin: $spacer-5 0;
   border-bottom: 1px solid $border-color;
 }
+
+table {
+  display: block;
+  width: 100%;
+  overflow: scroll;
+
+  @include breakpoint(md) {
+    display: table;
+    width: auto;
+  }
+
+  td, th {
+    padding-top: $spacer-2;
+    padding-right: $spacer-3;
+    padding-bottom: $spacer-2;
+    padding-left: $spacer-3;
+    border-right: $border;
+    border-left: $border;
+
+    &:first-child {
+      border-left: 0;
+    }
+    &:last-child {
+      border-right: 0;
+    }
+  }
+  th {
+    background-color: $bg-gray;
+  }
+}
