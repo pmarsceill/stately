@@ -3,7 +3,7 @@
   {% include _head.html %}
 
   <body class="bg-darkest">
-    {% unless site.info_bar == nil %}
+    {% unless site.info_bar == nil or site.info_bar == false %}
       {% include _info_bar.html %}
     {% endunless %}
     {% include _site_nav.html %}
