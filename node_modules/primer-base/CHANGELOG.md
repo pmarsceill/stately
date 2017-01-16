@@ -1,3 +1,9 @@
+# v0.4.1
+
+ * Creating a new version - Jon Rohan [github/github@488569b](https://github.com/github/github/commit/488569b)
+ * Adding list-item for summary - Jon Rohan [github/github@59070d8](https://github.com/github/github/commit/59070d8)
+ * Removing normalize.css from dependencies and checking into base package - Jon Rohan [github/github@459e8b7](https://github.com/github/github/commit/459e8b7)
+
 # v0.4.0
 
  * Cutting new versions of primer modules - Jon Rohan [github/github@157f5ab](https://github.com/github/github/commit/157f5ab)
