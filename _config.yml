@@ -29,6 +29,14 @@ sass:
   # Load dependancies
   load_paths:
     - node_modules/
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - Gruntfile.js
+  - circle.yml
+  - vendor
 
 # Stately settings
 logo_file: assets/images/stately-logo.png # path to the logo file (supports svg, png, jpg, gif). Delete this line for no logo.
