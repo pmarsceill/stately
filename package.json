@@ -4,7 +4,7 @@
   "description": "A Jekyll theme for government.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "stylelint assets/css/**/*.scss -c .stylelintrc.json -s scss"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,13 @@
   },
   "homepage": "https://github.com/pmarsceill/stately#readme",
   "devDependencies": {
+    "parker": "0.0.10",
+    "primer-alerts": "^0.4.0",
     "primer-base": "^0.4.0",
     "primer-layout": "^0.3.0",
     "primer-support": "^1.0.0",
     "primer-utilities": "^2.0.0",
-    "primer-alerts": "^0.4.0"
+    "stylelint": "^7.4.2",
+    "stylelint-config-primer": "^1.1.0"
   }
 }
