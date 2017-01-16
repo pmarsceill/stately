@@ -101,12 +101,12 @@ Turn on the info bar by setting `info_bar: true` in your `config.yml` file. Cust
 {% highlight yaml %}
 ## Info bar settings
 info_bar: true # Bar at the top of all pages.
-info_bar_text: This is not an offical site of the <a href="//usa.gov" class="text-white text-underline">U.S. Government</a>
+info_bar_text: This is not an offical site of the <a href="//usa.gov" class="text-white text-underline">U.S. Government</a> <img class="emoji" title=":us:" alt=":us:" src="https://assets.github.com/images/icons/emoji/unicode/1f1fa-1f1f8.png" height="20" width="20" align="absmiddle"> 
 {% endhighlight %}
 
   <div class="border-top p-3">
     <div class="bg-darkest px-4">
-      <p class="mb-0 text-white text-small">:us: This is not an offical site of the <a href="//usa.gov" class="text-white text-underline">U.S. Government</a></p>
+      <p class="mb-0 text-white text-small">This is not an offical site of the <a href="//usa.gov" class="text-white text-underline">U.S. Government</a> :us:</p>
     </div>
   </div>
 </div>

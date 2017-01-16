@@ -6,16 +6,15 @@ parent: Docs
 
 # Configuration
 
-<p class="text-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p class="text-intro" markdown="1">Out of the box, Stately comes with a few options to configure your site. All site-wide configuration options are customized by editing your site’s `_config.yml` file.</p>
+
+In addition to the standard Jekyll configuration variables, Stately provides a few extras for various customizations you may want to make. Here is the default configuration that comes with a fresh install of Stately:
 
 ## Default configuration
 
 <div class="code-example border rounded-1">
 
 {% highlight yaml %}
-# Build settings
-gems:
-  - jemoji
 
 # Stately settings
 logo_file: assets/images/stately-logo.png # path to the logo file (supports svg, png, jpg, gif). Delete this line for no logo.
@@ -25,6 +24,21 @@ github_pages_branch: master # Branch where gh-pages site is hosted (either maste
 ## Info bar settings
 # info_bar: true # Bar at the top of all pages.
 # info_bar_text: This is not an offical site of the <a href="//usa.gov" class="text-white text-underline">U.S. Government</a>
-
 {% endhighlight %}
+</div>
+
+The variables in the Info bar section have been commented out so that the info bar UI component is not displayed by default.
+
+### Configuration variables, values, and defaults:
+
+<div class="text-small" markdown="1">
+
+| Variable              | Description   | Values  |
+|:----------------------|:--------------|:--------|
+| `logo_file`           | Path to the image file that displays on the upper right corner of the main nav. | `assets/images/stately-logo.png` (default), any path or url to an image file, or nil (no image). |
+| `github_link`         | Display a link to edit the page on GitHub on the bottom of every page? | `true` (default) or `false` (nil) |
+| `github_pages_branch` | the branch where the GitHub pages site is hosted |  `master` (default), `master/docs`, `gh-pages`, or nil |
+| `info_bar` | Display the black info bar on the top of the site? |  `true` (default) or `false` (nil) |
+| `info_bar_text` | Text to display in the info bar (only works if `info_bar` is set to `true`) | Any text (HTML accepted, text will be white by default) |
+
 </div>
