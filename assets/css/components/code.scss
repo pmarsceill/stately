@@ -9,9 +9,9 @@ pre {
 // Inline code
 
 code {
-  padding: 0.25em 0.4em;
+  padding: 0.18em 0.4em;
   font-size: 90%;
-  color: $heading-ink;
+  line-height: $body-line-height;
   background-color: rgba(0, 0, 0, 0.03);
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.03);
