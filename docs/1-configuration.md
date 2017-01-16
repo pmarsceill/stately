@@ -5,12 +5,19 @@ parent: Docs
 ---
 
 # Configuration
+{:.no_toc}
 
 <p class="text-intro" markdown="1">Out of the box, Stately comes with a few options to configure your site. All site-wide configuration options are customized by editing your site’s `_config.yml` file.</p>
 
-In addition to the standard Jekyll configuration variables, Stately provides a few extras for various customizations you may want to make. Here is the default configuration that comes with a fresh install of Stately:
+<div class="pl-4" markdown="1">
+* TOC
+{:toc}
+</div>
+
 
 ## Default configuration
+
+In addition to the standard Jekyll configuration variables, Stately provides a few extras for various customizations you may want to make. Here is the default configuration that comes with a fresh install of Stately:
 
 <div class="code-example border rounded-1">
 
@@ -29,7 +36,7 @@ github_pages_branch: master # Branch where gh-pages site is hosted (either maste
 
 The variables in the Info bar section have been commented out so that the info bar UI component is not displayed by default.
 
-### Configuration variables, values, and defaults:
+### Configuration variables, values, and defaults
 
 <div class="text-small" markdown="1">
 

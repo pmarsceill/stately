@@ -5,10 +5,20 @@ parent: Docs
 ---
 
 # UI Components
+{:.no_toc}
 
-<p class="text-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius officiis reprehenderit velit quisquam eveniet id, ipsa vitae sit. Quo praesentium nihil laudantium excepturi possimus corporis illum ab, iste voluptatum doloremque.</p>
+<p class="text-intro">From forms, to alerts, to information notices, Stately comes with a set of UI components that would be useful for a variety of Government website applications. </p>
+
+<div class="pl-4" markdown="1">
+* TOC
+{:toc}
+</div>
 
 ## Form Components
+
+Stately's form components are inherited from [Primer][bcb0a655], with some stylistic overrides that allow for better text alignment on inputs and buttons as well as different button styles.
+
+  [bcb0a655]: http://primercss.io/forms/ "Primer‘s form documentation"
 
 ### Buttons
 
@@ -20,11 +30,11 @@ parent: Docs
   <a href="#" class="btn btn-blue">Blue Link Button</a>
 </p>
 
-<p class="f3">
+<p class="text-large">
   <button class="btn">Big Button</button>
 </p>
 
-<p class="f3 text-serif">
+<p class="text-large text-serif">
   <button class="btn">Big Serif Button</button>
 </p>
 
@@ -39,11 +49,11 @@ parent: Docs
       <a href="#" class="btn btn-blue">Blue Link Button</a>
     </p>
 
-    <p class="f3">
+    <p class="text-large">
       <button class="btn">Big Button</button>
     </p>
 
-    <p class="f3 text-serif">
+    <p class="text-large text-serif">
       <button class="btn">Big Serif Button</button>
     </p>
 
@@ -53,9 +63,9 @@ parent: Docs
   </div>
 </div>
 
-### Inputs
+### Text inputs
 
-#### Text inputs
+To allow for buttons to align with form inputs at any text size, use the `form-input` class on your text-inputs and a parent [utility class](../4-utilities/) to scale the text size for both components:
 
 <div class="code-example border rounded-1">
 
@@ -68,7 +78,7 @@ parent: Docs
   <input type="text" class="form-input mr-1" placeholder="Placeholder text"> <button class="btn btn-no-shadow" type="submit">Send it</button>
 </p>
 
-<p class="f3">
+<p class="text-large">
   <input type="text" class="form-input mr-1"> <button class="btn btn-blue" type="submit">Send it</button>
 </p>
 
@@ -83,25 +93,158 @@ parent: Docs
       <input type="text" class="form-input mr-1" placeholder="Placeholder text"> <button class="btn btn-no-shadow" type="submit">Send it</button>
     </p>
 
-    <p class="f3">
+    <p class="text-large">
       <input type="text" class="form-input mr-1"> <button class="btn btn-blue" type="submit">Send it</button>
     </p>
   </div>
 </div>
 
----
+### Radio buttons and checkboxes
+
+<div class="code-example border rounded-1">
+
+{% highlight html %}
+<form>
+  <p>
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </p>
+
+  <p>
+    <label class="mr-2">
+      <input type="radio" id="herp" name="herpderp" checked> Herp
+    </label>
+    <label>
+      <input type="radio" id="derp" name="herpderp"> Derp
+    </label>
+  </p>
+
+  <p>
+    <button class="btn btn-blue" type="submit">Submit the form</button>
+  </p>
+</form>
+
+{% endhighlight %}
+
+  <div class="border-top p-3">
+    <form>
+      <p>
+        <label>
+          <input type="checkbox"> I’d like to duel
+        </label>
+      </p>
+
+      <p>
+        <label class="mr-2">
+          <input type="radio" id="Hamilton" name="duel" checked> Hamilton
+        </label>
+        <label>
+          <input type="radio" id="Burr" name="duel"> Burr
+        </label>
+      </p>
+
+      <p>
+        <button class="btn btn-blue" type="submit">Submit the form</button>
+      </p>
+    </form>
+  </div>
+</div>
+
+### Select menus
+
+For style select menus, wrap the `select` element in a `select-wrap` class. To make sure the `select` scales properly with the button apply the `form-input` class to it.
+
+<div class="code-example border rounded-1">
+
+{% highlight html %}
+<form>
+  <p class="text-small">
+    <span class="select-wrap">
+      <select class="form-select form-input mr-1">
+        <option>Choose an option</option>
+        <option>Life</option>
+        <option>Liberty</option>
+        <option>The pursuit of happiness</option>
+      </select>
+    </span>
+    <button class="btn btn-blue" type="submit">Submit the form</button>
+  </p>
+  <p>
+    <span class="select-wrap">
+      <select class="form-select form-input mr-1">
+        <option>Choose an option</option>
+        <option>Life</option>
+        <option>Liberty</option>
+        <option>The pursuit of happiness</option>
+      </select>
+    </span>
+    <button class="btn btn-blue" type="submit">Submit the form</button>
+  </p>
+  <p class="text-large">
+    <span class="select-wrap">
+      <select class="form-select form-input mr-1">
+        <option>Choose an option</option>
+        <option>Life</option>
+        <option>Liberty</option>
+        <option>The pursuit of happiness</option>
+      </select>
+    </span>
+    <button class="btn btn-blue" type="submit">Submit the form</button>
+  </p>
+</form>
+{% endhighlight %}
+
+  <div class="border-top p-3">
+    <form>
+      <p class="text-small">
+        <span class="select-wrap">
+          <select class="form-select form-input mr-1">
+            <option>Choose an option</option>
+            <option>Life</option>
+            <option>Liberty</option>
+            <option>The pursuit of happiness</option>
+          </select>
+        </span>
+        <button class="btn btn-blue" type="submit">Submit the form</button>
+      </p>
+      <p>
+        <span class="select-wrap">
+          <select class="form-select form-input mr-1">
+            <option>Choose an option</option>
+            <option>Life</option>
+            <option>Liberty</option>
+            <option>The pursuit of happiness</option>
+          </select>
+        </span>
+        <button class="btn btn-blue" type="submit">Submit the form</button>
+      </p>
+      <p class="text-large">
+        <span class="select-wrap">
+          <select class="form-select form-input mr-1">
+            <option>Choose an option</option>
+            <option>Life</option>
+            <option>Liberty</option>
+            <option>The pursuit of happiness</option>
+          </select>
+        </span>
+        <button class="btn btn-blue" type="submit">Submit the form</button>
+      </p>
+    </form>
+  </div>
+</div>
 
 ## Warnings and notices
 
 ### Global info bar
 
-Turn on the info bar by setting `info_bar: true` in your `config.yml` file. Customize the text using the `info_bar_text` variable. See [configuration](../1-configuration/) for more information.
+Turn on the info bar by setting `info_bar: true` in your site’s `_config.yml` file. Customize the text using the `info_bar_text` variable. See [configuration](../1-configuration/) for more information.
 
 <div class="code-example border rounded-1">
 {% highlight yaml %}
 ## Info bar settings
 info_bar: true # Bar at the top of all pages.
-info_bar_text: This is not an offical site of the <a href="//usa.gov" class="text-white text-underline">U.S. Government</a> <img class="emoji" title=":us:" alt=":us:" src="https://assets.github.com/images/icons/emoji/unicode/1f1fa-1f1f8.png" height="20" width="20" align="absmiddle"> 
+info_bar_text: This is not an offical site of the <a href="//usa.gov" class="text-white text-underline">U.S. Government</a> <img class="emoji" title=":us:" alt=":us:" src="https://assets.github.com/images/icons/emoji/unicode/1f1fa-1f1f8.png" height="20" width="20" align="absmiddle">
 {% endhighlight %}
 
   <div class="border-top p-3">
@@ -113,7 +256,7 @@ info_bar_text: This is not an offical site of the <a href="//usa.gov" class="tex
 
 ### Flash messages
 
-Uses Primer’s Alert module, see [Primer Alerts](http://primercss.io/alerts/) for detailed documentation.
+Stately extends Primer’s Alert module, see [Primer Alerts](http://primercss.io/alerts/) for detailed documentation.
 
 #### Notice message
 
@@ -172,9 +315,9 @@ Used for error / severe messages at the page level.
   </div>
 </div>
 
----
-
 ## Downloads
+
+The special download button includes an icon to draw attention to downloading a PDF of document. Use utility classes to style and format any metadata:
 
 ### Downloadable Documents & Forms
 <div class="code-example border rounded-1">
@@ -183,18 +326,24 @@ Used for error / severe messages at the page level.
 <p>
   <a href="#" class="link-download">Download this document</a>
 </p>
-
-<a href="#" class="link-download d-block">Download this document <span class="text-small text-gray-light no-underline d-block">30KB PDF</span></a>
-
-<a href="#" class="link-download link-download-form d-block">Download this form <span class="text-small text-gray-light no-underline d-block">30KB PDF - Due by 12/31/2017</span></a>
+<p>
+  <a href="#" class="link-download">Download this document <span class="text-small text-gray-light no-underline d-block no-underline">- 30KB PDF</span></a>
+</p>
+<p>
+  <a href="#" class="link-download link-download-form"><span class="d-block width-full">Download this form</span><span class="text-small text-gray-light d-block width-full">30KB PDF - Due by 12/31/2017</span></a>
+</p>
 {% endhighlight %}
 
   <div class="border-top p-3">
     <p>
       <a href="#" class="link-download">Download this document</a>
     </p>
-    <a href="#" class="link-download d-block">Download this document <span class="text-small text-gray-light no-underline d-block">30KB PDF</span></a>
-    <a href="#" class="link-download link-download-form d-block">Download this form <span class="text-small text-gray-light no-underline d-block">30KB PDF - Due by 12/31/2017</span></a>
+    <p>
+      <a href="#" class="link-download">Download this document <span class="text-small text-gray-light d-block width-full">30KB PDF</span></a>
+    </p>
+    <p>
+      <a href="#" class="link-download link-download-form">Download this form <span class="text-small text-gray-light d-block width-full">30KB PDF - Due by 12/31/2017</span></a>
+    </p>
   </div>
 </div>
 
@@ -207,6 +356,7 @@ Used for error / severe messages at the page level.
 <div class="code-example border rounded-1">
 
 {% highlight markdown %}
+<!-- Markdown example: -->
 {% raw %}
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et `inline code tag` dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 {% endraw %}
@@ -224,6 +374,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <div class="code-example border rounded-1">
   {% highlight liquid %}
     {% raw %}
+    {% comment %}
+    Markdown / Liquid example:
+    {% endcomment %}
+
     {% highlight json %}
     {
       "name": "stately",
