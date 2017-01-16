@@ -1,26 +1,24 @@
 .btn {
-  background-color: #ddd;
-  color: $heading-ink;
-  text-decoration: none;
-  background-image: linear-gradient(#f7f7f7, #e6e6e6);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
-  line-height: 1.5;
+  display: inline-block;
+  box-sizing: border-box;
   padding-top: 0.25em;
+  padding-right: 1em;
   padding-bottom: 0.25em;
   padding-left: 1em;
-  padding-right: 1em;
-  border-width: 0;
-  box-sizing: border-box;
-  font-size: inherit;
-  font-family: inherit;
-  display: inline-block;
   margin: 0;
-  vertical-align: baseline;
-  appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  color: $heading-ink;
   text-decoration: none;
+  vertical-align: baseline;
   cursor: pointer;
-
+  background-color: #ddd;
+  background-image: linear-gradient(#f7f7f7, #e6e6e6);
+  border-width: 0;
+  border-radius: 3px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.1);
+  appearance: none;
 
   &:focus {
     text-decoration: none;
@@ -82,8 +80,8 @@
 }
 
 .btn-blue {
-  background-image: linear-gradient(lighten($royal-blue, 5%), darken($royal-blue, 5%));
   color: $white;
+  background-image: linear-gradient(lighten($royal-blue, 5%), darken($royal-blue, 5%));
 
   &:hover,
   &.zeroclipboard-is-hover {
@@ -105,21 +103,22 @@
 
 .link-download {
   position: relative;
+  padding-top: $spacer-3;
+  padding-bottom: $spacer-3;
   padding-left: $spacer-6;
   background-image: url("../images/icon-download.png");
   background-repeat: no-repeat;
-  background-size: $spacer-5 auto;
   background-position: left center;
-  padding-top: $spacer-3;
-  padding-bottom: $spacer-3;
+  background-size: $spacer-5 auto;
 
   &:hover {
     text-decoration: none;
+
     &::after {
       position: absolute;
-      content: "\2193";
-      left: $spacer-5;
       top: 0.8em;
+      left: $spacer-5;
+      content: "\2193";
     }
   }
 }

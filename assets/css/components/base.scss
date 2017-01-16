@@ -1,3 +1,5 @@
+// stylelint-disable selector-no-type
+
 pre {
   font-size: inherit;
 }
@@ -37,7 +39,8 @@ table {
     width: auto;
   }
 
-  td, th {
+  td,
+  th {
     padding-top: $spacer-2;
     padding-right: $spacer-3;
     padding-bottom: $spacer-2;
@@ -48,10 +51,12 @@ table {
     &:first-child {
       border-left: 0;
     }
+
     &:last-child {
       border-right: 0;
     }
   }
+
   th {
     background-color: $bg-gray;
   }

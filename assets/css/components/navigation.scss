@@ -4,8 +4,8 @@
 }
 
 .site-logo {
-  max-height: 28px;
   width: auto;
+  max-height: 28px;
 }
 
 .side-nav {
@@ -14,19 +14,19 @@
 }
 
 .side-nav-item {
-  display: none;
   position: relative;
+  display: none;
   border-top: $border;
   border-bottom: $border;
 
   @include breakpoint(md) {
     display: block;
-    border-top: none;
+    border-top: 0;
   }
 
   .open & {
     display: block !important;
-    border-top: none;
+    border-top: 0;
   }
 
   &:first-of-type {
@@ -37,11 +37,13 @@
     display: block;
     border-right: 2px solid $royal-blue;
 
+    // stylelint-disable string-quotes
     &::after {
       position: absolute;
-      right: $spacer-3;
       top: $spacer-3;
+      right: $spacer-3;
       content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z"></path></svg>');
+      // stylelint-enable string-quotes
     }
 
     @include breakpoint(md) {

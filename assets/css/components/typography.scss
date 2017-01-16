@@ -1,4 +1,6 @@
-// Base styles
+// Base typography styles
+// stylelint-disable selector-no-type
+
 html {
   font-size: $body-font-family;
   line-height: $body-line-height;
@@ -6,8 +8,8 @@ html {
 
 body {
   font-family: $body-font-family;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: $body-line-height;
   color: $body-font-color;
 
@@ -17,34 +19,44 @@ body {
 }
 
 // Headings
-h1, .heading-alpha, .display-alpha,
-h2, .heading-beta, .display-beta,
-h3, .heading-gamma,
-h4, .heading-delta,
-h5, .heading-epsilon
+h1,
+.heading-alpha,
+.display-alpha,
+h2,
+.heading-beta,
+.display-beta,
+h3,
+.heading-gamma,
+h4,
+.heading-delta,
+h5,
+.heading-epsilon,
 h6 {
+  margin-bottom: 0.2em;
   font-family: $heading-font-family;
   line-height: $heading-line-height;
   color: $heading-font-color;
-  margin-bottom: .2em;
 }
 
-h1, .heading-alpha {
+h1,
+.heading-alpha {
   font-family: $display-font-family;
-  font-weight: 300;
   font-size: 48px;
+  font-weight: 300;
 }
 
-h2, .heading-beta {
-  font-weight: 300;
+h2,
+.heading-beta {
   font-size: 28px;
+  font-weight: 300;
 
   @include breakpoint(md) {
     font-size: 36px;
   }
 }
 
-h3, .heading-gamma {
+h3,
+.heading-gamma {
   font-size: 18px;
   font-weight: 300;
 
@@ -53,28 +65,30 @@ h3, .heading-gamma {
   }
 }
 
-h4, .heading-delta {
+h4,
+.heading-delta {
   font-family: $body-font-family;
   font-size: $body-font-size;
   font-weight: 600;
   color: $heading-font-color;
 }
 
-h5, .heading-epsilon {
+h5,
+.heading-epsilon {
   font-family: $heading-font-family;
   font-size: 13px;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-weight: 300;
 }
 
 .display-alpha {
   font-family: $display-font-family;
-  text-transform: uppercase;
-  letter-spacing: .03em;
   font-size: 34px;
   font-weight: 300;
   line-height: $heading-line-height;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 
   @include breakpoint(md) {
     font-size: 54px;
@@ -97,7 +111,7 @@ ul,
 ol,
 dl {
   li {
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -107,12 +121,11 @@ dl {
   counter-reset: ol-counter;
 
   li {
-
-    &:before {
+    &::before {
+      padding-right: 0.5em;
       content: counter(ol-counter);
       counter-increment: ol-counter;
       opacity: 0.6;
-      padding-right: 0.5em;
 
       @include breakpoint(md) {
         position: absolute;
@@ -124,8 +137,8 @@ dl {
 
 .text-intro {
   font-family: $heading-font-family;
-  font-weight: 300;
   font-size: 16px;
+  font-weight: 300;
   line-height: $body-line-height;
 
   @include breakpoint(md) {
@@ -145,7 +158,9 @@ dl {
       left: -1.25em;
       width: 0.75em;
       height: 0.75em;
+      //stylelint-disable string-quotes
       content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.29 15"><path d="M19.29,2.37L6.43,15,0,8.68,2.41,6.32l4,3.95L16.88,0Z" fill="#{ $gray }"/></svg>');
+      //stylelint-enable string-quotes
     }
   }
 }
