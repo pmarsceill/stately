@@ -62,8 +62,8 @@ table {
   }
 }
 
-ul,
-ol {
+ul:not([class]),
+ol:not([class]) {
   padding-left: 1.2rem;
 
   @include breakpoint(lg) {
