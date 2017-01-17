@@ -15,7 +15,7 @@ nav: true
       <div class="text-small text-gray-light mb-3">
         <time>{{ post.date | date: "%B %-d, %Y" }}</time> · {% include _reading_time.html %} read
       </div>
-      <p>{{ post.excerpt | remove: '<p class="text-intro">' | remove: "<p>" | remove: "<p>"}}</p>
+      {{ post.excerpt }}
     </article>
   {% endfor %}
 </div>
