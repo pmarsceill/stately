@@ -168,12 +168,48 @@ dl {
     &::before {
       position: absolute;
       top: 0;
-      left: -1.25em;
+      left: -1.1em;
       width: 0.75em;
       height: 0.75em;
       //stylelint-disable string-quotes
-      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.29 15"><path d="M19.29,2.37L6.43,15,0,8.68,2.41,6.32l4,3.95L16.88,0Z" fill="#{ $gray }"/></svg>');
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="M6.41 0l-.69.72-2.78 2.78-.81-.78-.72-.72-1.41 1.41.72.72 1.5 1.5.69.72.72-.72 3.5-3.5.72-.72-1.44-1.41z" transform="translate(0 1)" fill="#{ lighten($royal-blue, 40%) }"/></svg>');
       //stylelint-enable string-quotes
     }
+  }
+}
+
+// Blockquote
+
+blockquote,
+.blockquote {
+  padding-left: $spacer-3;
+  font-family: $heading-font-family;
+  font-style: italic;
+  color: $text-gray;
+  border-left: 3px solid $border-color;
+}
+
+.pullquote {
+  position: relative;
+  padding-left: 0;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: inherit;
+  font-weight: 300;
+  border-left: 0;
+
+  @include breakpoint(md) {
+    font-size: 24px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -1.1em;
+    width: 0.75em;
+    height: 0.75em;
+    //stylelint-disable string-quotes
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="M3 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1zm5 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1z" transform="translate(0 1)" fill="#{ lighten($royal-blue, 40%) }"/></svg>');
+    //stylelint-enable string-quotes
   }
 }
