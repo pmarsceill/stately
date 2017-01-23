@@ -14,6 +14,24 @@ parent: Docs
 {:toc}
 </div>
 
+## Typefaces
+
+Stately uses two contrasting typefaces: Lato and Lora. Their font files served for free through Google Fonts.
+
+<div class="border rounded-1 p-3 mb-3">
+<h1 class="text-serif">Lato</h1>
+<p class="text-serif">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+<p class="text-serif">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+
+
+<h1 class="text-sans">Lora</h1>
+<p class="text-sans">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+<p class="text-sans">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+
+</div>
+
+These two typefaces were chosen to create contrast between heading and body elements (see below).
+
 ## Headings
 
 Stately has two types of headings: [text headings](#text-headings), and [display headings](#display-headings). Text headings are used to help structure passages of text, and display headings are for further promotion or to call out a headline. By default, all headings in markdown posts and pages are text-headings.
@@ -113,7 +131,7 @@ Stately has a few lists inherited from Primer, with some additional custom list 
 {% highlight html %}
 <ol>
   <li>Lorem</li>
-  <li>ipsum</li>
+  <li>How long lines<br>will break.</li>
   <li>dolor</li>
   <li>sit amet</li>
 </ol>
@@ -121,7 +139,7 @@ Stately has a few lists inherited from Primer, with some additional custom list 
 {% highlight markdown %}
 <!-- Markdown example: -->
   1. Lorem
-  1. ipsum
+  1. How long lines<br>will break.
   1. dolor
   1. sit amet
 {% endhighlight %}
@@ -129,7 +147,7 @@ Stately has a few lists inherited from Primer, with some additional custom list 
 <div class="border-top px-5 py-3">
   <ol>
     <li>Lorem</li>
-    <li>ipsum</li>
+    <li>How long lines<br>will break.</li>
     <li>dolor</li>
     <li>sit amet</li>
   </ol>
@@ -143,7 +161,7 @@ Stately has a few lists inherited from Primer, with some additional custom list 
 {% highlight html %}
 <ul>
   <li>Lorem</li>
-  <li>ipsum</li>
+  <li>How long lines<br>will break.</li>
   <li>dolor</li>
   <li>sit amet</li>
 </ul>
@@ -151,7 +169,7 @@ Stately has a few lists inherited from Primer, with some additional custom list 
 {% highlight markdown %}
 <!-- Markdown example: -->
   - Lorem
-  - ipsum
+  - How long lines<br>will break.
   - dolor
   - sit amet
 {% endhighlight %}
@@ -159,7 +177,7 @@ Stately has a few lists inherited from Primer, with some additional custom list 
 <div class="border-top px-5 py-3">
   <ul>
     <li>Lorem</li>
-    <li>ipsum</li>
+    <li>How long lines<br>will break.</li>
     <li>dolor</li>
     <li>sit amet</li>
   </ul>
@@ -175,7 +193,7 @@ A more stylized version of an `ol` might be used in content that explains steps 
 {% highlight html %}
 <ol class="ol-styled">
   <li>Lorem</li>
-  <li>ipsum</li>
+  <li>How long lines<br>will break.</li>
   <li>dolor</li>
   <li>sit amet</li>
 </ol>
@@ -184,7 +202,7 @@ A more stylized version of an `ol` might be used in content that explains steps 
 <div class="border-top px-5 py-3">
   <ol class="ol-styled">
     <li>Lorem</li>
-    <li>ipsum</li>
+    <li>How long lines<br>will break.</li>
     <li>dolor</li>
     <li>sit amet</li>
   </ol>
@@ -200,7 +218,7 @@ A checklist is best used for content that explains the satisfaction of requireme
 {% highlight html %}
 <ul class="list-checklist">
   <li>Lorem</li>
-  <li>ipsum</li>
+  <li>How long lines<br>will break.</li>
   <li>dolor</li>
   <li>sit amet</li>
 </ul>
@@ -209,9 +227,55 @@ A checklist is best used for content that explains the satisfaction of requireme
 <div class="border-top px-5 py-3">
   <ul class="list-checklist">
     <li>Lorem</li>
-    <li>ipsum</li>
+    <li>How long lines<br>will break.</li>
     <li>dolor</li>
     <li>sit amet</li>
   </ul>
+</div>
+</div>
+
+## Quotes
+
+### Block quote
+
+For long blocks of quoted text a standard `<blockquote>` will set the quote off from the surrounding text in style, color, indentation, and border. An equivalent `.blockquote` class is also included to override css or apply to a different element type.
+
+<div class="code-example border rounded-1">
+
+{% highlight html %}
+<blockquote>
+  This is a block quote. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati eius, ratione nulla libero, ab repudiandae ipsum laudantium, ea reiciendis est perspiciatis dignissimos at ullam dolorem aperiam, sit commodi maxime tenetur?
+</blockquote>
+{% endhighlight %}
+{% highlight markdown %}
+<!-- Markdown example: -->
+> This is a block quote. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati eius, ratione nulla libero, ab repudiandae ipsum laudantium, ea reiciendis est perspiciatis dignissimos at ullam dolorem aperiam, sit commodi maxime tenetur?
+
+{% endhighlight %}
+
+<div class="border-top p-3">
+<blockquote>
+  This is a block quote. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati eius, ratione nulla libero, ab repudiandae ipsum laudantium, ea reiciendis est perspiciatis dignissimos at ullam dolorem aperiam, sit commodi maxime tenetur?
+</blockquote>
+</div>
+</div>
+
+### Pullquote
+
+For shorter, more emphasized quotes use a the `.pullquote` css class to style the text appropriately. Additionally, combine [utility classes](../4-utilities/) like `float-` and `col-` to size position the text.
+
+<div class="code-example border rounded-1">
+
+{% highlight html %}
+<blockquote class="pullquote col-6 float-right">
+  This is a pull quote. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+</blockquote>
+{% endhighlight %}
+
+<div class="clearfix border-top p-3">
+<blockquote class="pullquote col-6 float-right">
+  This is a pull quote. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+</blockquote>
+
 </div>
 </div>
