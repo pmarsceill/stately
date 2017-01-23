@@ -1,6 +1,8 @@
 ---
 ---
 // Import dev dependancies (pulled in via npm)
+
+// Primer CSS
 @import "primer-support/index.scss";
 @import "primer-base/index.scss";
 @import "primer-layout/index.scss";
@@ -12,6 +14,7 @@
 
 @import "components/base.scss";
 @import "components/typography.scss";
+@import "components/media.scss";
 @import "components/buttons.scss";
 @import "components/navigation.scss";
 @import "components/jumbotron.scss";
