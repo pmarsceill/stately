@@ -1,11 +1,3 @@
-// Layout utils
-
-.img-fluid {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
-}
-
 // Color / opacity utils
 
 .bg-darkest {
@@ -25,6 +17,10 @@
 }
 
 // Type utils
+
+.text-sans {
+  font-family: $body-font-family !important;
+}
 
 .text-serif {
   font-family: $heading-font-family !important;
