@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/pmarsceill/stately#readme",
   "devDependencies": {
+    "open-iconic": "^1.1.1",
     "parker": "0.0.10",
     "primer-alerts": "^0.4.0",
     "primer-base": "^0.4.0",
