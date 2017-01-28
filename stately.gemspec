@@ -1,7 +1,7 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "stately"
+  spec.name          = "stately-jekyll"
   spec.version       = "0.1.0"
   spec.authors       = ["Patrick Marsceill"]
   spec.email         = ["pmarsceill@github.com"]
