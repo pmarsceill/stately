@@ -10,7 +10,7 @@ Add this line to your Jekyll site's Gemfile:
 gem "stately"
 ```
 
-And add this line to your Jekyll site:
+And add this line to your Jekyll site's `_config.yml` file:
 
 ```yaml
 theme: stately
