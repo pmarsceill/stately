@@ -1,0 +1,7 @@
+.page-section {
+  padding: 2rem 0;
+
+  @include breakpoint(md) {
+    padding: 4rem 0;
+  }
+}
