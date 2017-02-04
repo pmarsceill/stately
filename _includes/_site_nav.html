@@ -2,7 +2,7 @@
   <div class="container-lg px-4">
     <div class="d-flex flex-justify-between flex-items-center">
       <div>
-        <a class="heading-beta no-underline" href="{{ "/" | relative_url }}">{% unless site.logo_file == nil %}<img src="{{ site.logo_file | absolute_url }}" alt="" class="site-logo mr-2">{% endunless %}{{ site.title }}</a>
+        <a class="heading-beta no-underline" href="{{ "/" | relative_url }}">{% unless site.nav_logo_file == nil %}<img src="{{ site.nav_logo_file | absolute_url }}" alt="" class="site-logo mr-2">{% endunless %}{{ site.title }}</a>
       </div>
       <button type="button" name="Open nav" class="site-nav-trigger js-site-nav-trigger">
         nav
