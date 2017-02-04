@@ -24,7 +24,7 @@ In addition to the standard Jekyll configuration variables, Stately provides a f
 {% highlight yaml %}
 
 # Stately settings
-logo_file: assets/images/stately-logo.png # path to the logo file (supports svg, png, jpg, gif). Delete this line for no logo.
+nav_logo_file: assets/images/stately-logo.png # path to the logo file (supports svg, png, jpg, gif). Delete this line for no logo.
 github_link: true # Display link to edit page content on GitHub
 github_pages_branch: master # Branch where gh-pages site is hosted (either master, master/docs, or gh-pages)
 
@@ -42,7 +42,7 @@ The variables in the Info bar section have been commented out so that the info b
 
 | Variable              | Description   | Values  |
 |:----------------------|:--------------|:--------|
-| `logo_file`           | Path to the image file that displays on the upper right corner of the main nav. | `assets/images/stately-logo.png` (default), any path or url to an image file, or nil (no image). |
+| `nav_logo_file`           | Path to the image file that displays on the upper right corner of the main nav. | `assets/images/stately-logo.png` (default), any path or url to an image file, or nil (no image). |
 | `github_link`         | Display a link to edit the page on GitHub on the bottom of every page? | `true` (default) or `false` (nil) |
 | `github_pages_branch` | the branch where the GitHub pages site is hosted |  `master` (default), `master/docs`, `gh-pages`, or nil |
 | `info_bar` | Display the black info bar on the top of the site? |  `true` (default) or `false` (nil) |

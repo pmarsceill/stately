@@ -1,6 +1,6 @@
 {
-  "name": "stately",
-  "version": "1.0.0",
+  "name": "stately-jekyll",
+  "version": "0.1.0",
   "description": "A Jekyll theme for government.",
   "main": "index.html",
   "scripts": {
