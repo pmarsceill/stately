@@ -1,0 +1,40 @@
+---
+layout: page
+---
+
+<h1 class="mb-4">{{ page.title }}</h1>
+
+<div class="clearfix gut-lg">
+  <div class="col-md-3 float-md-right">
+    <p class="col-6 col-md-12 float-left float-md-none">
+      <span class="text-small text-gray-light d-block">Published:</span>
+      <time class="text-small d-block mb-3">{{ page.date | date: "%B %-d, %Y" }}</time>
+    </p>
+    <p class="col-6 col-md-12 float-left float-md-none">
+      <span class="text-small text-gray-light d-block">Reading time:</span>
+      <span class="text-small d-block mb-3">{% include _reading_time.html %}</span>
+    </p>
+  </div>
+  <div class="col-md-9 float-md-left markdown-body">
+    {{ content }}
+  </div>
+  <div class="col-md-3 float-md-right">
+    {% if page.next or page.previous %}
+    <hr class="my-3">
+    {% endif %}
+    {% if page.next %}
+      <p class="text-small">
+        <span class="text-small text-gray-light d-block">Next post:</span>
+        <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+      </p>
+    {% endif %}
+    {% if page.previous %}
+      <p class="text-small">
+        <span class="text-small text-gray-light d-block">Previously:</span>
+        <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+      </p>
+    {% endif %}
+  </div>
+</div>
+
+{% include _gh_link.html %}

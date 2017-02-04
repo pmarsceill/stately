@@ -1,0 +1,215 @@
+// Base typography styles
+// stylelint-disable selector-no-type
+
+html {
+  font-size: $body-font-family;
+  line-height: $body-line-height;
+}
+
+body {
+  font-family: $body-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: $body-line-height;
+  color: $body-font-color;
+
+  @include breakpoint(md) {
+    font-size: $body-font-size;
+  }
+}
+
+// Headings
+h1,
+.heading-alpha,
+.display-alpha,
+h2,
+.heading-beta,
+.display-beta,
+h3,
+.heading-gamma,
+h4,
+.heading-delta,
+h5,
+.heading-epsilon,
+h6 {
+  margin-bottom: 0.2em;
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  color: $heading-font-color;
+}
+
+h1,
+.heading-alpha {
+  font-family: $display-font-family;
+  font-size: 36px;
+  font-weight: 300;
+
+  @include breakpoint(md) {
+    font-size: 48px;
+  }
+}
+
+h2,
+.heading-beta {
+  font-size: 28px;
+  font-weight: 300;
+
+  @include breakpoint(md) {
+    font-size: 36px;
+    font-weight: 300;
+  }
+}
+
+h3,
+.heading-gamma {
+  font-size: 18px;
+  font-weight: 300;
+
+  @include breakpoint(md) {
+    font-size: 24px;
+  }
+}
+
+h4,
+.heading-delta {
+  font-family: $body-font-family;
+  font-size: 14px;
+  font-weight: 600;
+  color: $heading-font-color;
+
+  @include breakpoint(md) {
+    font-size: $body-font-size;
+  }
+}
+
+h5,
+.heading-epsilon {
+  font-family: $heading-font-family;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  @include breakpoint(md) {
+    font-size: 13px;
+  }
+}
+
+.display-alpha {
+  font-family: $display-font-family;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: $heading-line-height;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  @include breakpoint(md) {
+    font-size: 54px;
+  }
+}
+
+.display-beta {
+  font-family: $display-font-family;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: $heading-line-height;
+
+  @include breakpoint(md) {
+    font-size: 36px;
+  }
+}
+
+// Lists
+ul,
+ol,
+dl {
+  li {
+    margin-bottom: 0.5em;
+  }
+}
+
+.ol-styled {
+  position: relative;
+  list-style: none;
+  counter-reset: ol-counter;
+
+  li {
+    &::before {
+      padding-right: 0.5em;
+      content: counter(ol-counter);
+      counter-increment: ol-counter;
+      opacity: 0.6;
+
+      @include breakpoint(md) {
+        position: absolute;
+        left: -1.25em;
+      }
+    }
+  }
+}
+
+.text-intro {
+  font-family: $heading-font-family;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: $body-line-height;
+
+  @include breakpoint(md) {
+    font-size: 18px;
+  }
+}
+
+.list-checklist {
+  list-style: none;
+
+  li {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -1.1em;
+      width: 0.75em;
+      height: 0.75em;
+      //stylelint-disable string-quotes
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="M6.41 0l-.69.72-2.78 2.78-.81-.78-.72-.72-1.41 1.41.72.72 1.5 1.5.69.72.72-.72 3.5-3.5.72-.72-1.44-1.41z" transform="translate(0 1)" fill="#{ lighten($royal-blue, 40%) }"/></svg>');
+      //stylelint-enable string-quotes
+    }
+  }
+}
+
+// Blockquote
+
+blockquote,
+.blockquote {
+  padding-left: $spacer-3;
+  font-family: $heading-font-family;
+  font-style: italic;
+  color: $text-gray;
+  border-left: 3px solid $border-color;
+}
+
+.pullquote {
+  position: relative;
+  padding-left: 0;
+  font-family: inherit;
+  font-size: 18px;
+  font-style: inherit;
+  font-weight: 300;
+  border-left: 0;
+
+  @include breakpoint(md) {
+    font-size: 24px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -1.1em;
+    width: 0.75em;
+    height: 0.75em;
+    //stylelint-disable string-quotes
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"><path d="M3 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1zm5 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1z" transform="translate(0 1)" fill="#{ lighten($royal-blue, 40%) }"/></svg>');
+    //stylelint-enable string-quotes
+  }
+}

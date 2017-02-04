@@ -1,0 +1,19 @@
+// Markdown body styles for rendered markdown
+// stylelint-disable selector-no-type
+
+.markdown-body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.3em;
+
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+  }
+}
+
+// stylelint-enable selector-no-type

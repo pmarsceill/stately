@@ -9,12 +9,17 @@ cp -rf ./node_modules/primer-layout/ ./assets/css/primer-layout/
 cp -rf ./node_modules/primer-utilities/ ./assets/css/primer-utilities/
 cp -rf ./node_modules/primer-alerts/ ./assets/css/primer-alerts/
 
+git add ./assets/css/
+git commit -m 'Stately build packaging'
+
 echo "Packaging gem... \n"
 gem build stately-jekyll.gemspec
 
-echo "Cleaning up.. \n"
+echo "Cleaning up... \n"
+git reset HEAD~
 rm -rf ./assets/css/primer-support/
 rm -rf ./assets/css/primer-base/
 rm -rf ./assets/css/primer-layout/
 rm -rf ./assets/css/primer-utilities/
 rm -rf ./assets/css/primer-alerts/
+git commit -c ORIG_HEAD

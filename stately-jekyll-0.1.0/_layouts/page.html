@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="page-section markdown-body container-lg px-4">
+  {{ content }}
+
+  {% if page.layout == "page" %}
+    {% include _gh_link.html %}
+  {% endif %}
+</div>
