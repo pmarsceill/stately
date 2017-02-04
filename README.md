@@ -36,13 +36,39 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 ## Development
 
-To set up your environment to develop this theme, run `bundle install`.
+### Environment setup
 
-You theme is setup just like a normal Jelyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+To set up your environment to develop this theme, clone this repo and install the dev dependancies:
+  ```bash
+  $ bundle install
+  ```
 
-When your theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
+  ```bash
+  $ npm install
+  ```
+
+You theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+### Tests
+
+To run tests on SCSS and HTML run:
+
+  ```bash
+  $ script/test
+  ```
+
+### Releases
+
+To prepare bundle a new version of the Gem:
+
+- Rev the version number in `package.json`
+- Rev the version number in `stately-jekyll.gemspec`
+- Update the `CHANGELOG.md`
+- Run the build script
+  ```bash
+  $ script/build
+  ```
 
 ## License
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
