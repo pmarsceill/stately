@@ -9,7 +9,7 @@ cp -rf ./node_modules/primer-layout/ ./_sass/primer-layout/
 cp -rf ./node_modules/primer-utilities/ ./_sass/primer-utilities/
 cp -rf ./node_modules/primer-alerts/ ./_sass/primer-alerts/
 
-git add ./assets/css/
+git add ./_sass/
 git commit -m 'Stately build packaging'
 
 echo "Packaging gem... \n"
