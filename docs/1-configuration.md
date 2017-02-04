@@ -23,7 +23,7 @@ In addition to the standard Jekyll configuration variables, Stately provides a f
 
 {% highlight yaml %}
 
-# Stately settings
+## Stately settings
 nav_logo_file: assets/images/stately-logo.png # path to the logo file (supports svg, png, jpg, gif). Delete this line for no logo.
 github_link: true # Display link to edit page content on GitHub
 github_pages_branch: master # Branch where gh-pages site is hosted (either master, master/docs, or gh-pages)
@@ -36,7 +36,7 @@ github_pages_branch: master # Branch where gh-pages site is hosted (either maste
 
 The variables in the Info bar section have been commented out so that the info bar UI component is not displayed by default.
 
-### Configuration variables, values, and defaults
+### Site-wide configuration variables, values, and defaults
 
 <div class="text-small" markdown="1">
 
