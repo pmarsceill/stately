@@ -8,7 +8,8 @@ permalink: docs/
 
 # Documentation
 
-Stately is a Jekyll theme built with Liquid templating, Sass, and a sprinkle of Javascript.{: .text-intro }
+Stately is a Jekyll theme built with Liquid templating, Sass, and a sprinkle of Javascript.
+{: .text-intro }
 
 ## Getting started
 To use Stately on your site, install the gem and update your `_config.yml` file to use thes theme:
