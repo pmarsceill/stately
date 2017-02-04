@@ -1,0 +1,20 @@
+#!/bin/sh
+echo "Running tests... \n"
+./script/test
+
+echo "Moving SCSS dependancies into ./assets/css... \n"
+cp -rf ./node_modules/primer-support/ ./assets/css/primer-support/
+cp -rf ./node_modules/primer-base/ ./assets/css/primer-base/
+cp -rf ./node_modules/primer-layout/ ./assets/css/primer-layout/
+cp -rf ./node_modules/primer-utilities/ ./assets/css/primer-utilities/
+cp -rf ./node_modules/primer-alerts/ ./assets/css/primer-alerts/
+
+echo "Packaging gem... \n"
+gem build stately-jekyll.gemspec
+
+echo "Cleaning up.. \n"
+rm -rf ./assets/css/primer-support/
+rm -rf ./assets/css/primer-base/
+rm -rf ./assets/css/primer-layout/
+rm -rf ./assets/css/primer-utilities/
+rm -rf ./assets/css/primer-alerts/
