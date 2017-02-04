@@ -3,11 +3,11 @@ echo "Running tests... \n"
 ./script/test
 
 echo "Moving SCSS dependancies into ./assets/css... \n"
-cp -rf ./node_modules/primer-support/ ./assets/css/primer-support/
-cp -rf ./node_modules/primer-base/ ./assets/css/primer-base/
-cp -rf ./node_modules/primer-layout/ ./assets/css/primer-layout/
-cp -rf ./node_modules/primer-utilities/ ./assets/css/primer-utilities/
-cp -rf ./node_modules/primer-alerts/ ./assets/css/primer-alerts/
+cp -rf ./node_modules/primer-support/ ./_sass/primer-support/
+cp -rf ./node_modules/primer-base/ ./_sass/primer-base/
+cp -rf ./node_modules/primer-layout/ ./_sass/primer-layout/
+cp -rf ./node_modules/primer-utilities/ ./_sass/primer-utilities/
+cp -rf ./node_modules/primer-alerts/ ./_sass/primer-alerts/
 
 git add ./assets/css/
 git commit -m 'Stately build packaging'
@@ -16,10 +16,12 @@ echo "Packaging gem... \n"
 gem build stately-jekyll.gemspec
 
 echo "Cleaning up... \n"
-git reset HEAD~
-rm -rf ./assets/css/primer-support/
-rm -rf ./assets/css/primer-base/
-rm -rf ./assets/css/primer-layout/
-rm -rf ./assets/css/primer-utilities/
-rm -rf ./assets/css/primer-alerts/
-git commit -c ORIG_HEAD
+rm -rf ./_sass/primer-support/
+rm -rf ./_sass/primer-base/
+rm -rf ./_sass/primer-layout/
+rm -rf ./_sass/primer-utilities/
+rm -rf ./_sass/primer-alerts/
+git add ./_sass/
+git commit -m 'Stately build packaging cleanup'
+git add *.gem
+git commit -m 'Bump stately-jekyll gem package'
