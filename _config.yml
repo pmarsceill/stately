@@ -39,10 +39,11 @@ exclude:
   - vendor
 
 # Stately settings
-logo_file: assets/images/stately-logo.png # path to the logo file (supports svg, png, jpg, gif). Delete this line for no logo.
-github_link: true # Display link to edit page content on GitHub
-github_pages_branch: master # Branch where gh-pages site is hosted (either master, master/docs, or gh-pages)
+nav_logo_file: assets/images/stately-logo.png # path to the logo file for the main nav (supports svg, png, jpg, gif). Delete this line for no logo.
+footer_logo_file: assets/images/stately-logo.png # path to the logo file for the footer nav (supports svg, png, jpg, gif). Delete this line for no logo.
+github_link: true # Display link to edit page content on GitHub. Delete this line or set to false for no link.
+github_pages_branch: master # Branch where gh-pages site is hosted (either master, master/docs, or gh-pages). Delete this line for no GitHub pages branch.
 
 ## Info bar settings
-# info_bar: true # Bar at the top of all pages.
-# info_bar_text: This is not an offical site of the <a href="//usa.gov" class="text-white text-underline">U.S. Government</a>
+# info_bar: true # Bar at the top of all pages. Delete this line or set to false for no info bar display.
+# info_bar_text: This is not an offical site of the <a href="//usa.gov" class="text-white text-underline">U.S. Government</a> # Only shows if info_bar == true
