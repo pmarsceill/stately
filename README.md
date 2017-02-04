@@ -7,13 +7,13 @@ Stately is the Jekyll theme for government. Stately’s modern setup and design 
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "stately"
+gem "stately-jekyll"
 ```
 
 And add this line to your Jekyll site's `_config.yml` file:
 
 ```yaml
-theme: stately
+theme: stately-jekyll
 ```
 
 And then execute:
@@ -22,7 +22,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install stately
+    $ gem install stately-jekyll
 
 ## Usage
 
