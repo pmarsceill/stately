@@ -52,13 +52,13 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/pmarsc
 ### Environment setup
 
 To set up your environment to develop this theme, clone this repo and install the dev dependancies:
-  ```bash
-  $ bundle install
-  ```
+```bash
+$ bundle install
+```
 
-  ```bash
-  $ npm install
-  ```
+```bash
+$ npm install
+```
 
 You theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
@@ -66,9 +66,9 @@ You theme is setup just like a normal Jekyll site! To test your theme, run `bund
 
 To run tests on SCSS and HTML run:
 
-  ```bash
-  $ script/test
-  ```
+```bash
+$ script/test
+```
 
 ### Releases
 
@@ -78,9 +78,10 @@ To prepare bundle a new version of the Gem:
 - Rev the version number in `stately-jekyll.gemspec`
 - Update the `CHANGELOG.md`
 - Run the build script
-  ```bash
-  $ script/build
-  ```
+
+```bash
+$ script/build
+```
 
 ## License
 
