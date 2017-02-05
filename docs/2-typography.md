@@ -260,7 +260,7 @@ For long blocks of quoted text a standard `<blockquote>` will set the quote off 
 </div>
 </div>
 
-### Pullquote
+### Pull quote
 
 For shorter, more emphasized quotes use a the `.pullquote` css class to style the text appropriately. Additionally, combine [utility classes](../4-utilities/) like `float-` and `col-` to size position the text.
 
