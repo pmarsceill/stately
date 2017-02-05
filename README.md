@@ -1,21 +1,19 @@
-# stately
+# Stately
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+Stately is the Jekyll theme for government. Stately’s modern setup and design is specifically geared toward goverment oriented websites.
 
 ## Installation
 
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "stately"
+gem "stately-jekyll"
 ```
 
-And add this line to your Jekyll site:
+And add this line to your Jekyll site's `_config.yml` file:
 
 ```yaml
-theme: stately
+theme: stately-jekyll
 ```
 
 And then execute:
@@ -24,15 +22,30 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install stately
+    $ gem install stately-jekyll
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
+For full setup instructions read the See the [Getting started guide](https://pmarsceill.github.io/stately/docs/).
+
+Edit `_config.yml` to being setting up Stately for your website. In addition to the default Jekyll settings, Stately includes some additional:
+
+```yaml
+# Stately settings
+logo_file: assets/images/stately-logo.png # path to the logo file (supports svg, png, jpg, gif). Delete this line for no logo.
+github_link: true # Display link to edit page content on GitHub
+github_pages_branch: master # Branch where gh-pages site is hosted (either master, master/docs, or gh-pages)
+
+## Info bar settings
+# info_bar: true # Bar at the top of all pages.
+# info_bar_text: This is not an offical site of the <a href="//usa.gov" class="text-white text-underline">U.S. Government</a>
+```
+
+See the [Configuration docs](https://pmarsceill.github.io/stately/docs/1-configuration/) for more information.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/pmarsceill/stately. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 

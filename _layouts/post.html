@@ -25,13 +25,13 @@ layout: page
     {% if page.next %}
       <p class="text-small">
         <span class="text-small text-gray-light d-block">Next post:</span>
-        <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+        <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a>
       </p>
     {% endif %}
     {% if page.previous %}
       <p class="text-small">
         <span class="text-small text-gray-light d-block">Previously:</span>
-        <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+        <a href="{{ site.baseurl }}{{ page.previous.url }}">{{ page.previous.title }}</a>
       </p>
     {% endif %}
   </div>
