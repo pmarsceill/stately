@@ -25,7 +25,6 @@ gems:
   - jemoji
 permalink: pretty
 sass:
-  sass_dir: assets/css/
   # Load dependancies
   load_paths:
     - node_modules/
