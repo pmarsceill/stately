@@ -19,15 +19,13 @@ parent: Docs
 Stately uses two contrasting typefaces: Lato and Lora. Their font files served for free through Google Fonts.
 
 <div class="border rounded-1 p-3 mb-3">
-<h1 class="text-serif">Lato</h1>
-<p class="text-serif">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-<p class="text-serif">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-
-
-<h1 class="text-sans">Lora</h1>
+<h1 class="text-sans">Lato</h1>
 <p class="text-sans">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
 <p class="text-sans">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
 
+<h1 class="text-serif">Lora</h1>
+<p class="text-serif">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+<p class="text-serif">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
 </div>
 
 These two typefaces were chosen to create contrast between heading and body elements (see below).
