@@ -14,10 +14,10 @@
   vertical-align: baseline;
   cursor: pointer;
   background-color: #ddd;
-  background-image: linear-gradient(#f7f7f7, #e6e6e6);
+  background-image: linear-gradient(#f7f7f7, #ececec);
   border-width: 0;
   border-radius: 3px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12), inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.1);
   appearance: none;
 
   &:focus {
@@ -34,8 +34,8 @@
 
   &:hover,
   &.zeroclipboard-is-hover {
-    background-image: linear-gradient(#f1f1f1, #ddd);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(#f9f9f9, #e6e6e6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13), inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:hover,
@@ -79,9 +79,17 @@
   }
 }
 
+.btn-raise-hover {
+  transition: transform 0.15s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
 .btn-blue {
   color: $white;
-  background-image: linear-gradient(lighten($royal-blue, 5%), darken($royal-blue, 5%));
+  background-image: linear-gradient(lighten($royal-blue, 10%), darken($royal-blue, 3%));
 
   &:hover,
   &.zeroclipboard-is-hover {
