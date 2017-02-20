@@ -39,6 +39,10 @@ Stately's form components are inherited from [Primer][bcb0a655], with some styli
 </p>
 
 <p>
+  <button class="btn btn-raise-hover">Raise button on hover</button>
+</p>
+
+<p>
   <a href="#" class="btn btn-no-shadow">Link button with no shadow</a>
 </p>
 {% endhighlight %}
@@ -55,6 +59,10 @@ Stately's form components are inherited from [Primer][bcb0a655], with some styli
 
     <p class="text-large text-serif">
       <button class="btn">Big Serif Button</button>
+    </p>
+
+    <p>
+      <button class="btn btn-raise-hover">Raise button on hover</button>
     </p>
 
     <p>
