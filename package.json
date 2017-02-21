@@ -29,7 +29,7 @@
     "primer-base": "^0.4.0",
     "primer-layout": "^0.3.0",
     "primer-support": "^1.0.0",
-    "primer-utilities": "^2.0.0",
+    "primer-utilities": "^3.3.1",
     "stylelint": "^7.4.2",
     "stylelint-config-primer": "^1.1.0"
   }
