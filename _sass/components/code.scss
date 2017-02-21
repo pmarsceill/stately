@@ -9,9 +9,10 @@ pre {
 // Inline code
 
 code {
-  padding: 0.18em 0.4em;
+  padding: 0.14em 0.4em;
   font-size: 90%;
   line-height: $body-line-height;
+  white-space: pre;
   background-color: rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(0, 0, 0, 0.03);
   border-radius: 3px;
@@ -21,11 +22,13 @@ code {
 
 pre {
   padding: $spacer;
+  margin-top: 0.25em;
   border-radius: $border-radius;
 
   code {
     padding: 0;
     color: inherit;
+    white-space: inherit;
     background-color: transparent;
     border: 0;
     border-radius: 0;
@@ -46,6 +49,7 @@ pre {
   margin-bottom: $spacer;
   background-color: rgba(0, 0, 0, 0.03);
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 
   .code-example & {
     margin-bottom: 0;
