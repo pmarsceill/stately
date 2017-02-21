@@ -14,6 +14,11 @@
       margin-top: 1em;
     }
   }
+
+  ul:not([class]),
+  ol:not([class]) {
+    padding-left: $spacer-4;
+  }
 }
 
 // stylelint-enable selector-no-type
