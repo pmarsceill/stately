@@ -35,16 +35,12 @@ $ npm run build
 
 ## Documentation
 
-You can read more about other primer modules in the [full primer docs][docs].
-
 <!-- %docs
 title: Layout
-homepage: https://github.com/primer/primer-layout
 status: Deprecated
 status_issue: https://github.com/github/design-systems/issues/59
+key: /css/styles/core/objects
 -->
-
-### Layout
 
 Primer's layout includes basic page containers and a single-tiered, fraction-based grid system. That sounds more complicated than it really is though—it's just containers, rows, and columns.
 
