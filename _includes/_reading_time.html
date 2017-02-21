@@ -1,5 +1,9 @@
 <span title="Estimated read time">
-  {% assign words = content | number_of_words %}
+  {% if post.content != nil %}
+    {% assign words = post.content | number_of_words %}
+  {% else %}
+    {% assign words = content | number_of_words %}
+  {% endif %}
   {% if words < 360 %}
     1 min
   {% else %}
