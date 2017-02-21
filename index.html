@@ -2,40 +2,42 @@
 title: The Jekyll theme for government
 layout: default
 ---
-<div class="jumbotron">
-  <div class="container-lg px-4">
+<div class="jumbotron bg-gray-light">
+  <div class="container-lg px-4 pb-md-4">
     <div class="col-sm-10 col-md-7 float-md-left mb-3 mb-md-0">
-      <h1 class="display-alpha text-white mb-3">The Jekyll theme for government</h1>
-      <p class="text-intro text-white dim mb-4">
-        Harness the power of static websites for government applications with Stately, an open source theme for Jekyll. Stately’s modern setup and design is specifically geared toward goverment oriented websites.
+      <h1 class="display-alpha mb-3">The Jekyll theme for government</h1>
+      <p class="heading-gamma dim mb-4">
+        Harness the power of static websites for government applications with Stately, an open source theme for Jekyll made for government agencies.
       </p>
       <p class="mb-4 mb-md-0 f3 text-serif">
-        <a href="{{ "/docs" | absolute_url }}" class="btn">Read the docs</a>
+        <a href="{{ "/docs" | absolute_url }}" class="btn btn-blue mr-1 btn-raise-hover">Read the docs</a>
+        <a href="{{ "/github" | absolute_url }}" class="btn btn-raise-hover">View source</a>
       </p>
     </div>
     <div class="col-md-4 float-md-right">
-      <h2 class="heading-gamma text-white mt-2 mb-3">Get started in minutes:</h2>
-      <ol class="text-white ol-styled">
-        <li><a href="{{ "/docs#install-on-github-pages" | absolute_url }}" class="text-white text-underline">Install Stately on GitHub pages</a> or <a href="{{ "/docs#install-with-the-gem" | absolute_url }}" class="text-white text-underline">use the Ruby Gem</a> on your Jekyll site</li>
-        <li><a href="{{ "/docs/1-configuration" | absolute_url }}" class="text-white text-underline">Configure Stately</a> for your needs</li>
-        <li>Add your content (<a href="//jekyllrb.com/docs/pages/" class="text-white text-underline">view Jekyll docs</a>)</li>
-        <li>Publish your site (<a href="//jekyllrb.com/docs/deployment-methods/" class="text-white text-underline">view Jekyll docs</a>)</li>
-      </ol>
+      <div class="position-relative bg-white p-4 rounded-1 overflow-hidden mt-3 btn-raise-hover">
+        <div class="position-absolute top-0 left-0 width-full bg-royal-blue pt-1"></div>
+        <h2 class="heading-gamma mb-2">Get started in minutes:</h2>
+        <ol class="ol-styled ml-4">
+          <li><a href="{{ "/docs" | absolute_url }}" class="text-underline">Use the Ruby Gem</a> to add Stately as your Jekyll site’s theme</li>
+          <li><a href="{{ "/docs/1-configuration" | absolute_url }}" class="text-underline">Configure Stately</a> for your needs</li>
+          <li>Add your content (<a href="//jekyllrb.com/docs/pages/" class="text-underline">view Jekyll docs</a>)</li>
+          <li>Publish your site (<a href="//jekyllrb.com/docs/deployment-methods/" class="text-underline">view Jekyll docs</a>)</li>
+        </ol>
+      </div>
     </div>
   </div>
 </div>
-<div class="page-section">
+<div class="page-section py-md-0">
   <div class="container-lg px-4">
     <div class="clearfix">
-      <div class="col-lg-10 mb-6">
+      <div class="col-md-4 float-left position-relative" style="height: 642px; top: -60px;">
+        <img src="{{ "assets/images/demo.png" | absolute_url }}" alt="" class="position-absolute" width="842" height="642" style="left: -580px;">
+      </div>
+      <div class="col-md-8 float-right mt-md-4 pt-6">
         <h2 class="heading-beta">The what for what?</h2>
-        <p class="text-large">Stately is a theme built for <a href="//jekyllrb.com">Jekyll</a>, a static website generator. Jekyll allows you to transform plain text files into websites that can be hosted in a variety of ways, including for free on <a href="//pages.github.com">GitHub pages</a>. Stately’s feature set, design patterns, and visual aesthetic, are geared toward goverment applications, but can be used for any purpose a static site may serve. Stately is open source, distributed by an <a href="https://github.com/pmarsceill/stately/blob/master/LICENSE.txt">MIT license</a>, and can be contributed to on <a href="//github.com/pmarsceill/stately">GitHub</a>.</p>
-      </div>
-      <div class="col-md-5 float-left position-relative" style="height: 642px">
-        <img src="{{ "assets/images/demo.png" | absolute_url }}" alt="" class="position-absolute" width="842" height="642" style="left: -490px;">
-      </div>
-      <div class="col-md-7 float-right mt-md-4">
-        <h4 class="heading-epsilon mb-2">What's included?</h4>
+        <p class="text-intro text-sans text-normal mb-4">Stately is a theme built for <a href="//jekyllrb.com">Jekyll</a>, a static website generator. Jekyll allows you to transform plain text files into websites that can be hosted in a variety of ways, including for free on <a href="//pages.github.com">GitHub pages</a>. Stately’s feature set, design patterns, and visual aesthetic, are geared toward goverment applications, but can be used for any purpose a static site may serve. Stately is open source, distributed by an <a href="https://github.com/pmarsceill/stately/blob/master/LICENSE.txt">MIT license</a>, and can be contributed to on <a href="//github.com/pmarsceill/stately">GitHub</a>.</p>
+        <h3 class="heading-epsilon mb-2">What's included?</h4>
         <ul class="list-checklist d-flex flex-wrap flex-justify-between flex-items-stretch">
           <li class="col-sm-5">Light weight, mobile-first, responsive design.</li>
           <li class="col-sm-5">Layouts for landing pages, sub pages, and blog posts</li>
@@ -44,23 +46,24 @@ layout: default
           <li class="col-sm-5">Open source icons from Iconic</li>
           <li class="col-sm-5">Built on GitHub’s open source <a href="//github.com/primer">Primer CSS library</a></li>
         </ul>
-        <h3 class="mb-2">Government websites shouldn’t be difficult to setup,  costly to maintain, and hard to use</h3>
-        <p class="mb-3">
-          Many U.S. Federal Goverment websites are already running on closed,  static platforms like <a href="https://federalist.18f.gov" title="Federalist, the United States Goverment publishing platform for static  websites.">Federalist</a>. Stately aims to bring this technology to agencies at all levels with the ability to quickly setup and customize a static website (open or closed source). This is ideal for policy websites, like <a href="https://sourcecode.cio.gov">The Federal Source Code Policy</a> which has the ability for the public to <a href="https://github.com/whitehouse/source-code-policy/issues">observe and participate in its</a> existance.
-          </p>
-
-          <p class="border-top pt-2 mt-4"><a href="{{ "/about" | absolute_url }}" class="no-underline">Learn more about this project <svg class="svg-icon ml-2" width="14" height="14"><use xlink:href="{{ "/assets/images/icons/open-iconic/sprite.min.svg#arrow-right" | absolute_url }}"></use></svg></a></p>
+        <p class="border-top pt-2 mt-4"><a href="{{ "/about" | absolute_url }}" class="no-underline">Learn more about this project <svg class="svg-icon ml-2" width="14" height="14"><use xlink:href="{{ "/assets/images/icons/open-iconic/sprite.min.svg#arrow-right" | absolute_url }}"></use></svg></a></p>
       </div>
     </div>
   </div>
 </div>
-<div class="page-section bg-gray overflow-hidden">
+<div class="page-section pb-0 bg-royal-blue overflow-hidden">
   <div class="container-lg px-4">
     <div class="col-md-6 float-left">
-      <h2>Let's get to work</h2>
+      <h2 class="heading-gamma mb-3 text-white dim">Government websites shouldn’t be difficult to setup, costly to maintain, or challenging for the public to use</h2>
+      <p class="mb-3 text-white">
+        Many U.S. Federal Goverment websites are already running on closed,  static platforms like <a href="https://federalist.18f.gov" title="Federalist, the United States Goverment publishing platform for static  websites." class="text-white text-underline dim">Federalist</a>. Stately aims to bring this technology to agencies at all levels with the ability to quickly setup and customize a static website (open or closed source). Because Stately’s source code is open source, it is constantly being tested and improved.
+        </p>
+        <p class="text-serif">
+          <a href="{{ "/docs" | absolute_url }}" class="btn">Get started for free</a>
+        </p>
     </div>
-    <div class="col-md-6 float-left position-relative" style="height: 642px">
-      <img src="{{ "assets/images/demo.png" | absolute_url }}" alt="" class="position-absolute" width="842" height="642" style="right: -450px;">
+    <div class="col-md-6 float-left position-relative" style="height: 392px">
+      <img src="{{ "assets/images/footer.png" | absolute_url }}" alt="" class="position-absolute" style="right: -450px;" width="800" height="392">
     </div>
   </div>
 </div>
