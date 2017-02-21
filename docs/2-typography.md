@@ -7,12 +7,11 @@ parent: Docs
 # Typography
 {:.no_toc}
 
-<p class="text-intro">Government websites share a common need for easily scannable and highly legible typography. Stately’s typography attempts to elevate headings, make paragraphs clear and consistent, and allow for an immediately recognizable document structure. </p>
+Government websites share a common need for easily scannable and highly legible typography. Stately’s typography attempts to elevate headings, make paragraphs clear and consistent, and allow for an immediately recognizable document structure.
+{: .text-intro }
 
-<div class="pl-4" markdown="1">
 * TOC
 {:toc}
-</div>
 
 ## Typefaces
 

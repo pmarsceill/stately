@@ -7,12 +7,21 @@ parent: Docs
 # UI Components
 {:.no_toc}
 
-<p class="text-intro">From forms, to alerts, to information notices, Stately comes with a set of UI components that would be useful for a variety of Government website applications. </p>
+From forms, to alerts, to information notices, Stately comes with a set of UI components that would be useful for a variety of Government website applications.
+{: .text-intro }
 
-<div class="pl-4" markdown="1">
 * TOC
 {:toc}
-</div>
+
+## Dependancies
+
+Stately is built on top of Primer CSS. Before attempting to write custom style  overrides for your site, it may be helpful to familiarize yourself with these components from Primer, which might eliminate the need for more CSS and are included with Stately.
+
+-   [primer-base](https://github.com/primer/primer-base/tree/master/lib)
+-   [primer-layout](https://github.com/primer/primer-layout/tree/master/lib)
+-   [primer-support](https://github.com/primer/primer-support/tree/master/lib)
+-   [primer-utilities](https://github.com/primer/primer-utilities/tree/master/lib)
+-   [primer-alerts](https://github.com/primer/primer-alerts/tree/master/lib)
 
 ## Form Components
 
