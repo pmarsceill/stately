@@ -16,9 +16,13 @@
 @import "./components/typography.scss";
 @import "./components/media.scss";
 @import "./components/buttons.scss";
+@import "./components/card.scss";
 @import "./components/navigation.scss";
 @import "./components/jumbotron.scss";
 @import "./components/page-section.scss";
 @import "./components/markdown-body.scss";
 @import "./components/forms.scss";
 @import "./components/code.scss";
+
+// Custom styles for your site
+@import "./custom/custom.scss"
