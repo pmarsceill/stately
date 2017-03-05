@@ -16,12 +16,20 @@
   color: $heading-font-color !important;
 }
 
+.text-royal-blue {
+  color: $royal-blue !important;
+}
+
 .dim {
   opacity: 0.8 !important;
 }
 
 .border-royal-blue {
   border-color: $royal-blue !important;
+}
+
+.border-green {
+  border-color: $green !important;
 }
 
 // Type utils
