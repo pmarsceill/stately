@@ -13,7 +13,7 @@
             {% if node.title != null %}
               {% if node.nav == true %}
                 <li class="site-nav-item mb-0{% unless forloop.last %} mr-3{% endunless %} js-site-nav-item">
-                  <a class="d-block text-heading-color site-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">
+                  <a class="site-nav-link{% if page.url == node.url or layout.active == node.title or page.active == node.title %} active{% endif %}" href="{{ node.url | absolute_url }}">
                     {{ node.title }}
                   </a>
                 </li>
