@@ -47,8 +47,6 @@
   }
 }
 
-
-
 .site-nav-trigger {
   z-index: 101;
 
@@ -95,6 +93,7 @@
   &:first-of-type {
     border-top: $border;
   }
+
   &:hover {
     text-decoration: none;
 
