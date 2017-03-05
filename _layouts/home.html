@@ -4,7 +4,7 @@ layout: default
 {% comment %}
   This is your site's homepage, customize it by changing the markup here.
 {% endcomment %}
-<div class="jumbotron" style="background-image:url(/assets/images/phila-skyline.jpg);background-size:cover;background-repeat:no-repeat;">
+<div class="jumbotron" style="background-image:url({{ "/assets/images/phila-skyline.jpg" | absolute_url }});background-size:cover;background-repeat:no-repeat;">
   <div class="container-lg px-4 d-md-flex flex flex-items-center">
     <div class="col-md-8 mb-4 mb-md-0">
       <h1 class="mb-0" style="line-height:0"><span class="heading-epsilon d-inline-block mb-0 bg-royal-blue text-white px-2 py-1">The City of</span><br><span class="d-inline-block px-2 py-1 mb-0 display-alpha bg-white text-royal-blue">Philadelphia</span></h1>
@@ -16,12 +16,12 @@ layout: default
           Quick access
         </h2>
         <ul class="list-style-none">
-          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#trash"></use></svg>Trash pickup schedule</a></li>
-          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#dollar"></use></svg>Pay a bill or fine</a></li>
-          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#circle-x"></use></svg>Report a problem</a></li>
-          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#location"></use></svg>Find a city government building</a></li>
-          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#warning"></use></svg>Check the status of a complaint</a></li>
-          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#badge"></use></svg>Search for city jobs</a></li>
+          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="{{ "/assets/images/icons/open-iconic/sprite.min.svg#trash" | absolute_url }}"></use></svg>Trash pickup schedule</a></li>
+          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="{{ "/assets/images/icons/open-iconic/sprite.min.svg#dollar" | absolute_url }}"></use></svg>Pay a bill or fine</a></li>
+          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="{{ "/assets/images/icons/open-iconic/sprite.min.svg#circle-x" | absolute_url }}"></use></svg>Report a problem</a></li>
+          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="{{ "/assets/images/icons/open-iconic/sprite.min.svg#location" | absolute_url }}"></use></svg>Find a city government building</a></li>
+          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="{{ "/assets/images/icons/open-iconic/sprite.min.svg#warning"}} | absolute_url "></use></svg>Check the status of a complaint</a></li>
+          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="{{ "/assets/images/icons/open-iconic/sprite.min.svg#badge" | absolute_url }}"></use></svg>Search for city jobs</a></li>
         </ul>
       </div>
     </div>
@@ -35,7 +35,7 @@ layout: default
         <tr>
           <th class="text-left p-3 col-12 col-md-4 d-block d-md-table-cell">
             <div class="bg-red d-inline-block p-2 mr-2 rounded-1">
-              <svg viewBox="0 0 8 8" fill="#ffffff" height="14" width="14"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#warning"></use></svg>
+              <svg viewBox="0 0 8 8" fill="#ffffff" height="14" width="14"><use xlink:href="{{ "/assets/images/icons/open-iconic/sprite.min.svg#warning" | absolute_url }}"></use></svg>
             </div>
             Temperature warning
           </th>
@@ -44,7 +44,7 @@ layout: default
         <tr>
           <th class="text-left p-3 col-12 col-md-4 d-block d-md-table-cell">
             <div class="bg-yellow d-inline-block p-2 mr-2 rounded-1">
-              <svg viewBox="0 0 8 8" fill="#ffffff" height="14" width="14"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#trash"></use></svg>
+              <svg viewBox="0 0 8 8" fill="#ffffff" height="14" width="14"><use xlink:href="{{ "/assets/images/icons/open-iconic/sprite.min.svg#trash" | absolute_url }}"></use></svg>
             </div>
             Trash collection
           </th>
@@ -53,7 +53,7 @@ layout: default
         <tr>
           <th class="text-left p-3 col-12 col-md-4 d-block d-md-table-cell">
           <div class="bg-green d-inline-block p-2 mr-2 rounded-1">
-              <svg viewBox="0 0 8 8" fill="#ffffff" height="14" width="14"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#location"></use></svg>
+              <svg viewBox="0 0 8 8" fill="#ffffff" height="14" width="14"><use xlink:href="{{ "/assets/images/icons/open-iconic/sprite.min.svg#location" | absolute_url }}"></use></svg>
           </div>
             City government buildings
           </th>
