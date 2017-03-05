@@ -1,4 +1,7 @@
 {
+  "ignoreFiles": [
+    "assets/css/stately.scss"
+  ],
   "extends": [
     "stylelint-config-primer"
   ]
