@@ -2,6 +2,7 @@
 title: Page Layouts
 layout: page-two-col
 parent: Docs
+active: Docs
 ---
 
 # Page layouts

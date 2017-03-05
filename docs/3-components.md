@@ -2,6 +2,7 @@
 title: UI Components
 layout: page-two-col
 parent: Docs
+active: Docs
 ---
 
 # UI Components

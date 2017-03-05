@@ -2,6 +2,7 @@
 title: Configuration
 layout: page-two-col
 parent: Docs
+active: Docs
 ---
 
 # Configuration

@@ -2,6 +2,7 @@
 title: Typography
 layout: page-two-col
 parent: Docs
+active: Docs
 ---
 
 # Typography
