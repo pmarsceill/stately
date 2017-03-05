@@ -3,12 +3,13 @@ function toggleMainNav() {
   const navItems = document.querySelector('.js-site-nav-item');
   const navTrigger = document.querySelector('.js-site-nav-trigger');
 
-  navTrigger.addEventListener('click', function(event){
-    event.preventDefault();
-    toggleClasses(nav, 'open');
-    this.classList.toggle('open')
-  });
-
+  if (navTrigger != null) {
+    navTrigger.addEventListener('click', function(event){
+      event.preventDefault();
+      toggleClasses(nav, 'open');
+      this.classList.toggle('open')
+    });
+  }
 }
 
 function toggleSideNav() {
@@ -16,10 +17,12 @@ function toggleSideNav() {
   const navItems = document.querySelector('.js-side-nav-item');
   const activeLink = document.querySelector('.js-side-nav-link-active');
 
-  activeLink.addEventListener('click', function(event){
-    event.preventDefault();
-    toggleClasses(nav, 'open');
-  });
+  if (activeLink != null) {
+    activeLink.addEventListener('click', function(event){
+      event.preventDefault();
+      toggleClasses(nav, 'open');
+    });
+  }
 }
 
 function toggleClasses(el, className){
