@@ -28,14 +28,26 @@
 }
 
 .site-nav-item {
-  display: block;
-  font-size: 18px;
-
   @include breakpoint(md) {
     display: inline-block;
     font-size: inherit;
   }
 }
+
+.site-nav-link {
+  display: block;
+  color: $heading-ink;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.active {
+    color: $gray-light !important;
+  }
+}
+
+
 
 .site-nav-trigger {
   z-index: 101;
@@ -83,6 +95,13 @@
   &:first-of-type {
     border-top: $border;
   }
+  &:hover {
+    text-decoration: none;
+
+    @include breakpoint(md) {
+      border-right: 2px solid $border-color;
+    }
+  }
 
   &.active {
     z-index: 1;
@@ -116,6 +135,10 @@
 }
 
 .side-nav-link {
+  &:hover {
+    text-decoration: none;
+  }
+
   &.active {
     color: $heading-ink;
   }
