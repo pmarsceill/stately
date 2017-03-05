@@ -1,5 +1,162 @@
 ---
-layout: page
+layout: default
 ---
-
-{{ content }}
+{% comment %}
+  This is your site's homepage, customize it by changing the markup here.
+{% endcomment %}
+<div class="jumbotron" style="background-image:url(/assets/images/phila-skyline.jpg);background-size:cover;background-repeat:no-repeat;">
+  <div class="container-lg px-4 d-md-flex flex flex-items-center">
+    <div class="col-md-8 mb-4 mb-md-0">
+      <h1 class="mb-0" style="line-height:0"><span class="heading-epsilon d-inline-block mb-0 bg-royal-blue text-white px-2 py-1">The City of</span><br><span class="d-inline-block px-2 py-1 mb-0 display-alpha bg-white text-royal-blue">Philadelphia</span></h1>
+      <p class="d-inline-block px-2 py-1 text-serif bg-gray"><em>"Philadelphia maneto” &mdash; “Let brotherly love endure”</em></p>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-darkest">
+        <h2 class="heading-epsilon text-white dim mb-3 border-bottom pb-2">
+          Quick access
+        </h2>
+        <ul class="list-style-none">
+          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#trash"></use></svg>Trash pickup schedule</a></li>
+          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#dollar"></use></svg>Pay a bill or fine</a></li>
+          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#circle-x"></use></svg>Report a problem</a></li>
+          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#location"></use></svg>Find a city government building</a></li>
+          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#warning"></use></svg>Check the status of a complaint</a></li>
+          <li><a href="#" class="text-white"><svg viewBox="0 0 8 8" height="14" width="14" fill="#fff" class="mr-2 dim"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#badge"></use></svg>Search for city jobs</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page-section">
+  <div class="container-lg px-4">
+    <h2 class="heading-epsilon mb-3">Status updates</h2>
+    <table class="mb-4 mb-md-6">
+      <tbody>
+        <tr>
+          <th class="text-left p-3 col-12 col-md-4 d-block d-md-table-cell">
+            <div class="bg-red d-inline-block p-2 mr-2 rounded-1">
+              <svg viewBox="0 0 8 8" fill="#ffffff" height="14" width="14"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#warning"></use></svg>
+            </div>
+            Temperature warning
+          </th>
+          <td class="p-3 mb-4 mb-md-0 d-block d-md-table-cell"><p><em>Code Blue</em> - Due to extremely cold conditions, the City is implementing special measures to keep homeless people safe. If you see a person who needs shelter, call <strong>(215) 232-1984</strong>.</p> <p class="text-small">In effect: 4:00 p.m. on Friday, March 03 to 7:00 a.m. on Sunday, March 05</p></td>
+        </tr>
+        <tr>
+          <th class="text-left p-3 col-12 col-md-4 d-block d-md-table-cell">
+            <div class="bg-yellow d-inline-block p-2 mr-2 rounded-1">
+              <svg viewBox="0 0 8 8" fill="#ffffff" height="14" width="14"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#trash"></use></svg>
+            </div>
+            Trash collection
+          </th>
+          <td class="p-3 mb-4 mb-md-0 d-block d-md-table-cell">Trash and recycling pickup are delayed one calendar day for holiday scheduling.</td>
+        </tr>
+        <tr>
+          <th class="text-left p-3 col-12 col-md-4 d-block d-md-table-cell">
+          <div class="bg-green d-inline-block p-2 mr-2 rounded-1">
+              <svg viewBox="0 0 8 8" fill="#ffffff" height="14" width="14"><use xlink:href="/assets/images/icons/open-iconic/sprite.min.svg#location"></use></svg>
+          </div>
+            City government buildings
+          </th>
+          <td class="p-3 mb-4 mb-md-0 d-block d-md-table-cell">All City buildings are open for their regular business hours.</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 class="heading-epsilon mb-3">News &amp; Events</h2>
+    <div class="clearfix gut-md d-md-flex">
+      {% comment %}
+        Use site.category.news to scope these articles to a category called "news" (defined in the post's markdown file):
+        for post in site.category.news limit: 3
+      {% endcomment %}
+      {% for post in site.posts limit: 3 %}
+        <a class="col-md-6 d-flex mb-3 mb-md-0 no-underline" href="{{ site.baseurl }}{{ post.url }}">
+          <span class="col-5 pr-2">
+            {% comment %}
+              To use a featured image in your posts, replace this image's src  with a dynamic one defined in your post's markdown file:
+              ... src="post.featuredImageUrl" ...
+            {% endcomment %}
+              <img src="https://beta.phila.gov/media/20170224130227/City-Hall-Elena-660x430.jpg" alt="" class="img-fluid">
+          </span>
+          <div class="col-7 pl-2">
+            <time class="text-small text-gray">{{ post.date | date: "%m/%d/%Y"}}</time>
+            <h3 class="heading-delta text-heading-color">{{ post.title }}</h3>
+            {% comment %}
+              To use a shorter post description, replace this text with a dynamic one defined in your post's markdown file:
+              <p class="text-small text-gray-light lh-condensed">{{ post.shortDescription }}</p>
+            {% endcomment %}
+            <p class="text-small text-gray-light lh-condensed">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="page-section bg-gray-light">
+  <div class="container-lg px-4">
+    <h2 class="display-beta mb-4">Services and resources</h2>
+    <div class="d-md-flex flex-wrap gut-md mb-6 mb-md-4">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <h3 class="heading-delta"><a href="#">Free Libraries</a></h3>
+          <p class="text-gray-light text-small">Find your local library by zipcode or address.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <h3 class="heading-delta"><a href="#">Parks and Recreation Centers</a></h3>
+          <p class="text-gray-light text-small">Searchable map of all public parks and rec centers.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <h3 class="heading-delta"><a href="#">Free wifi access</a></h3>
+          <p class="text-gray-light text-small">Searchable map of all free public wifi access points.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <h3 class="heading-delta"><a href="#">Playgrounds</a></h3>
+          <p class="text-gray-light text-small">Searchable map and list of public playgrounds and their equipment.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <h3 class="heading-delta"><a href="#">Police Stations</a></h3>
+          <p class="text-gray-light text-small">Map of police stations, their precinct, and hours.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <h3 class="heading-delta"><a href="#">Fire Stations</a></h3>
+          <p class="text-gray-light text-small">Map of fire stations, their precinct, and hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-lg px-4">
+    <h2 class="heading-epsilon mb-3">Latest blog posts</h2>
+    <div class="d-md-flex d-wrap gut-md">
+      {% comment %}
+        Use site.category.blog to scope these articles to a category called "blog" (defined in the post's markdown file):
+        for post in site.category.news limit: 3
+      {% endcomment %}
+      {% for post in site.posts limit: 6 %}
+        <div class="col-md-6">
+          <article class="card card-with-stripe mb-4 ">
+            <h3 class="heading-gamma">
+              <a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title }}
+              </a>
+            </h3>
+            <div class="text-small text-gray-light mb-3">
+              <time>{{ post.date | date: "%B %-d, %Y" }}</time> · {% include _reading_time.html %} read
+            </div>
+            <p>{{ post.excerpt | strip_html }}</p>
+            <p class="text-small">
+              <a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
+            </p>
+          </article>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
