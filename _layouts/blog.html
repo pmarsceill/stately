@@ -1,0 +1,23 @@
+---
+layout: page
+active: blog
+---
+
+{{ content }}
+
+  {% for post in site.posts %}
+    <article class="mb-4 mb-md-6">
+      <h2 class="heading-gamma">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h2>
+      <div class="text-small text-gray-light mb-3">
+        <time>{{ post.date | date: "%B %-d, %Y" }}</time> · {% include _reading_time.html %} read
+      </div>
+      <p>{{ post.excerpt | strip_html }}</p>
+      <p class="text-small">
+        <a href="{{ site.baseurl }}{{ post.url }}">Read more...
+      </p>
+    </article>
+  {% endfor %}
