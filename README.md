@@ -1,28 +1,8 @@
-# Stately
+# Stately (currently in alpha)
 
 Stately is the Jekyll theme for government. Stately’s modern setup and design is specifically geared toward goverment oriented websites.
 
-## Installation
-
-Add this line to your Jekyll site's Gemfile:
-
-```ruby
-gem "stately-jekyll"
-```
-
-And add this line to your Jekyll site's `_config.yml` file:
-
-```yaml
-theme: stately-jekyll
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install stately-jekyll
+## Installation (coming soon as Ruby gem)
 
 ## Usage
 
